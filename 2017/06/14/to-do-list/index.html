@@ -247,7 +247,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#localStorage简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">localStorage简介</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#localStorage简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">localStorage简介</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#编程实现"><span class="post-toc-number">2.</span> <span class="post-toc-text">编程实现</span></a></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -389,7 +389,18 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p>一个to-do list也要玩花样？没错，没有存储功能的to-do list几乎没有实用价值。</p>
-<h1 id="localStorage简介"><a href="#localStorage简介" class="headerlink" title="localStorage简介"></a>localStorage简介</h1>
+<h1 id="localStorage简介"><a href="#localStorage简介" class="headerlink" title="localStorage简介"></a>localStorage简介</h1><p>  cookie一直都是Web开发人员用来存储数据的有效工具，但是cookie存在的一些问题限制了它的应用范围：</p>
+<pre><code>* 读取cookie需要冗余的代码
+* cookie是HTTP的功能而不是浏览器的
+* 浏览器限制了cookie的数量和大小(4KB)
+* cookie会过期
+</code></pre><p>  因此HTML5引入了Web存储功能–本地存储(localStorage)和会话存储(sessionStorage)。localStorage具有以下优点：</p>
+<pre><code>* 开发人员可以方便地设置、写入数据和读取数据
+* 拥有5MB(IE中有10MB)的超大存储空间
+* localStorage中的数据不会过期，永远有效，除非手动删除
+* 键/值对的存储方式，简单方便
+</code></pre><p>  具体使用方法可以参考<a href="http://www.w3school.com.cn/html5/html_5_webstorage.asp" target="_blank" rel="external">HTML5 Web存储</a>，保证5分钟内就能学会XD。</p>
+<h1 id="编程实现"><a href="#编程实现" class="headerlink" title="编程实现"></a>编程实现</h1>
     
 
     
