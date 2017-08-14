@@ -409,9 +409,9 @@
 * 动画优化
 * 移动端优化
 </code></pre><p>  具体的代码可以到github库中查看下载<a href="https://github.com/McCarthey/A-To-do-list" target="_blank" rel="external">A-To-do-list Github</a></p>
-<h1 id="改造成PWA"><a href="#改造成PWA" class="headerlink" title="改造成PWA"></a>改造成PWA</h1><pre><code>因为它是一个github page应用，在有网络的条件下可以随时访问。但是有些应用场景网络连接受限不畅通，或者是使用者忘记打开移动数据等，这些问题都会导致用户无法使用或者体验不佳。因此我将其升级成了PWA，使得用户可以将其放入手机主屏，而不用打开浏览器输入烦人的url，同时使其离线可访问。(因为数据都是存放在浏览器的localStorage中，无需网络即可写入、读取)
-</code></pre><h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><pre><code>未对用户输入做过滤，会收到XSS攻击(未来会补充)
-</code></pre>
+<h1 id="改造成PWA"><a href="#改造成PWA" class="headerlink" title="改造成PWA"></a>改造成PWA</h1><p>  因为它是一个github page应用，在有网络的条件下可以随时访问。但是有些应用场景网络连接受限不畅通，或者是使用者忘记打开移动数据等，这些问题都会导致用户无法使用或者体验不佳。因此我将其升级成了PWA，使得用户可以将其放入手机主屏，而不用打开浏览器输入烦人的url，同时使其离线可访问(因为数据都是存放在浏览器的localStorage中，无需网络即可写入、读取)。</p>
+<h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><p>  未对用户输入做过滤，会收到XSS攻击(未来会补充)</p>
+
     
 
     
@@ -436,6 +436,14 @@
             <!-- Post Prev & Next Nav -->
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
+    
+        <a href="/2017/08/14/node-js部署到阿里云/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
     
 
     <!-- Section Spacer -->
@@ -535,7 +543,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
