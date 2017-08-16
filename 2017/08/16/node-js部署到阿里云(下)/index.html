@@ -247,7 +247,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装node-js环境"><span class="post-toc-number">1.</span> <span class="post-toc-text">安装node.js环境</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#部署node-js环境"><span class="post-toc-number">1.</span> <span class="post-toc-text">部署node.js环境</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#端口"><span class="post-toc-number">2.</span> <span class="post-toc-text">端口</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#但是，端口是啥？干啥用的？"><span class="post-toc-number">2.0.0.1.</span> <span class="post-toc-text">但是，端口是啥？干啥用的？</span></a></li></ol></li></ol></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -389,9 +389,16 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p>接上文讲述服务器node.js环境部署及程序运行</p>
-<h1 id="安装node-js环境"><a href="#安装node-js环境" class="headerlink" title="安装node.js环境"></a>安装node.js环境</h1><p>网上有几篇博客讲述如何在云服务器上部署node.js程序的，不过针对一点儿这方面知识都没有的小白来说，那几篇文章都忽略了一个<strong>关键性的问题</strong>，此处暂且按下不说，我们往下走。</p>
-<p>上文说道我们购买了一个服务器实例，并选择了windows server或CentOS(或其他可选的linux系统)系统，那么我们如何来登录服务器呢？这里推荐一下<a href="https://help.aliyun.com/document_detail/50775.html" target="_blank" rel="external">如何在阿里云部署node.js项目</a>，这是阿里云上的官方文档(由第三方提供-.- WTF!)。该文档很详细，也很基础，<strong>但是，</strong>如果你仅仅是按照该文档来一步一步操作的话，<strong>是跑不通服务器的!</strong></p>
-<p>这里就涉及到我说的那个<strong>关键性问题</strong></p>
+<h1 id="部署node-js环境"><a href="#部署node-js环境" class="headerlink" title="部署node.js环境"></a>部署node.js环境</h1><p>网上有几篇博客讲述如何在云服务器上部署node.js程序的，不过针对一点儿这方面知识都没有的小白来说，那几篇文章都忽略了一个<strong>关键性的问题</strong>，此处暂且按下不说，我们往下走。</p>
+<p>上文说道我们购买了一个服务器实例，并选择了windows server或CentOS(或其他可选的linux系统)系统，那么我们如何来登录服务器呢？这里推荐一下<a href="https://help.aliyun.com/document_detail/50775.html" target="_blank" rel="external">如何在阿里云部署node.js项目</a>，这是阿里云上的官方文档(由第三方提供-.- WTF!)。该文档很详细，也很基础，<strong>但是，</strong>如果你仅仅是按照该文档来一步一步操作的话，<strong>是跑不通服务器的!</strong>也就是说当你在浏览器中输入你的云服务器公网IP:prot(教程example.js中设置的监听端口)，是没卵用的！ping也ping不同！ </p>
+<p>这里就涉及到我说的那个<strong>关键性问题</strong>，不过此处仅仅针对不熟悉网络端口的同学。</p>
+<h1 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h1><p>还记得我们在购买实例时有一个<strong>安全组</strong>选项吗？我们不妨打开阿里云的控制台，找到导航里<strong>安全组</strong>选项，点击配置规则，默认配置应该如下图所示:<br><img src="/img/post/ali/port.png" alt="port"><br>我们可以看到服务器默认打开了80端口和22端口，它们都是必须的端口：</p>
+<ul>
+<li>22端口是ssh端口，我们就靠它来登录服务器</li>
+<li>80端口是HTTP端口，是网页默认的端口号，关了它我们就没法浪了～<h4 id="但是，端口是啥？干啥用的？"><a href="#但是，端口是啥？干啥用的？" class="headerlink" title="但是，端口是啥？干啥用的？"></a>但是，<strong><a href="https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E7%AB%AF%E5%8F%A3/792237?fr=aladdin" target="_blank" rel="external">端口</a>是啥？干啥用的？</strong></h4>我们知道服务器就是一台主机，我们租用的阿里云服务器也是如此。安全组就相当于是云服务器的防火墙，而端口就像是墙上的洞(-_-||)，它们穿透防火墙，从而建立服务器和外界通信的通道。对于普通用户来说，如果我们想让自己的主机或是服务器被外界访问到，那么我们就要开放(暴露)一个端口，这样其他人才能通过公网来访问我们的页面。</li>
+</ul>
+<p>让我们看看实例的安全组配置，并没有example.js中设置的3000端口，这就是我们ping不通的原因。现在让我们点击右上角的“添加安全组规则”按钮，按下图所示输入必要信息：<br><img src="/img/post/ali/add_port.png" alt="add port"><br>点击确定后，保险起见可以重启一下云服务器，然后再输入公网IP:3000，duang!你的Hello world出现了！</p>
+<p>享受一下成功的喜悦，然后尽情地撸代码吧lul！</p>
 
     
 
