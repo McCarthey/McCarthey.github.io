@@ -10,7 +10,7 @@
     
     <title>
         
-            可以本地存储的to-do list | 
+            标签: PWA | 
         
         McCarthey&#39;s Blog
     </title>
@@ -34,7 +34,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="McCarthey">
     <meta name="description" content="This is McCarthey&#39;s blog">
-    <meta name="keywords" content="mccarthey blog 前端 js 博客,to-do-list,localStorage,PWA">
+    <meta name="keywords" content="mccarthey blog 前端 js 博客">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -60,9 +60,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://mccarthey.coding.me">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="可以本地存储的to-do list | McCarthey&#39;s Blog">
+    <meta property="og:title" content="标签: PWA | McCarthey&#39;s Blog">
     <meta property="og:description" content="This is McCarthey&#39;s blog">
-    <meta property="og:article:tag" content="to-do-list"> <meta property="og:article:tag" content="localStorage"> <meta property="og:article:tag" content="PWA"> 
+    
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -237,252 +237,96 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
-
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
     
-    <!-- Back Button -->
-    <!--
-    <div class="material-back" id="backhome-div" tabindex="0">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
-           href="#" onclick="window.history.back();return false;"
-           target="_self"
-           role="button"
-           data-upgraded=",MaterialButton,MaterialRipple">
-            <i class="material-icons" role="presentation">arrow_back</i>
-            <span class="mdl-button__ripple-container">
-                <span class="mdl-ripple"></span>
-            </span>
-        </a>
-    </div>
-    -->
+    <div class="locate-thumbnail-symbol"></div>
 
-    <!-- Left aligned menu below button -->
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
+    <!-- Pin on top -->
+    
 
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#localStorage简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">localStorage简介</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#编程实现"><span class="post-toc-number">2.</span> <span class="post-toc-text">编程实现</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#改造成PWA"><span class="post-toc-number">3.</span> <span class="post-toc-text">改造成PWA</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#存在的问题"><span class="post-toc-number">4.</span> <span class="post-toc-text">存在的问题</span></a></li></ol>
-
-        <!--
-        <li class="mdl-menu__item">
-            Some Action
-        </li>
-        -->
-    </ul>
-
-
-
-
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script>
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
         
     
-            <p class="article-headline-p">
-                可以本地存储的to-do list
-            </p>
-        </div>
 
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/Vass.jpg" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>McCarthey</strong>
-        <span>6月 14, 2017</span>
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2017/06/14/to-do-list/">可以本地存储的to-do list</a></p>
     </div>
 
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">devices other</i>
-            <span class="visuallyhidden">devices other</span>
-        </button>
-        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
-            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZUlEQVR42u3aQW7DMAwEwPz/0+0DgihL0lKcYHwqCsfW+CASKz7+fvp64OHh4eHh4eHh3Yz3iK/nX736+/n+V+9a/6q5Njw8PLwjvDdbbXzP+sXrX60/XL42PDw8vJO89cY9KQnJu5L3ru/Bw8PDuz8veU6yxVc/Hx4eHt438tbxxKQM4OHh4X0Xb7JxRzHBMqidhCB4eHh453n5IdP5v4+e7+Hh4eEFvPJIU2tQIB8guHjoCg8PD28DrxoZlBvcJD5oDV3h4eHhfYo3OchPAoukJFQ/TbmlxsPDwzvIy8cF8pY6pzbjYzw8PLzNvF4EMC8hvaiimVLj4eHhbeBNltgLf/NoOB/SwsPDw/sUr1oq8sUloe2keODh4eGd5FXj1EnD3Tv0KsQceHh4eJt51cY3P47KhwZ6EXAhpcbDw8O7lNfbiPOF7gsjXj4NDw8PbzMvD3N7i6t+xLwU4eHh4X2KlwS4j/jKy0neNOdDYHh4eHhneL0WOYkPqv+pFpXoAAwPDw9vA++q9re6uU+a8jcRMB4eHt4R3iSGSFrn5ha/L4zAw8PDG/MmYwQ5LA9BkjGvZt3Dw8PDu5Q3emjxsD9v2ctjCnh4eHgHefnhU35sNgH3igceHh7ebl71moxhJUu/4GPh4eHhbeZNNuU8cs0PzHrRBh4eHt55XnUIIHpN3I7nDXp0Jx4eHt5BXn6sVR04yGPZHh4PDw/v/ry8SEyGq/Iyg4eHh/ddvOoT5sdvRwsDHh4e3jiM6MUWk2GCozEuHh4e3oYDsKSpnX+gaonCw8PDO8n7vQsPDw8PDw8PD+8G1z/Iie05+lE20gAAAABJRU5ErkJggg==">
-        </ul>
-    
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/PWA/">PWA</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/localStorage/">localStorage</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/to-do-list/">to-do-list</a>
-    </ul>
-    
-
-    <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=可以本地存储的to-do list&url=https://mccarthey.coding.me//2017/06/14/to-do-list/index.html&pic=&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-
-    <!-- Share Facebook -->
-    
-
-    <!-- Share Google+ -->
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=McCarthey&#39;s Blog&title=可以本地存储的to-do list&summary=This is McCarthey&#39;s blog&pics=https://mccarthey.coding.me/img/favicon.png&url=https://mccarthey.coding.me/2017/06/14/to-do-list/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 QQ
-            </li>
-        </a>
-    
-
-    <!-- Share Telegram -->
-    
-</ul>
-
-</div>
-
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-    
-        <p>一个to-do list也要玩花样？没错，没有存储功能的to-do list几乎没有实用价值。<br>demo地址=&gt;<a href="https://mccarthey.github.io/A-To-do-list" target="_blank" rel="external">A-To-do-list</a></p>
-<h1 id="localStorage简介"><a href="#localStorage简介" class="headerlink" title="localStorage简介"></a>localStorage简介</h1><p>  cookie一直都是Web开发人员用来存储数据的有效工具，但是cookie存在的一些问题限制了它的应用范围：</p>
-<pre><code>* 读取cookie需要冗余的代码
-* cookie是HTTP的功能而不是浏览器的
-* 浏览器限制了cookie的数量和大小(4KB)
-* cookie会过期
-</code></pre><p>  因此HTML5引入了Web存储功能–本地存储(localStorage)和会话存储(sessionStorage)。localStorage具有以下优点：</p>
-<pre><code>* 开发人员可以方便地设置、写入数据和读取数据
-* 拥有5MB(IE中有10MB)的超大存储空间
-* localStorage中的数据不会过期，永远有效，除非手动删除
-* 键/值对的存储方式，简单方便
-</code></pre><p>  具体使用方法可以参考<a href="http://www.w3school.com.cn/html5/html_5_webstorage.asp" target="_blank" rel="external">HTML5 Web存储</a>，保证5分钟内就能学会XD。</p>
-<h1 id="编程实现"><a href="#编程实现" class="headerlink" title="编程实现"></a>编程实现</h1><p>  因为只是个很小的应用，所以我并未引用任何第三方库，都是用原生js来操作dom实现的，好处是文件都很小，不会出现几百k的怪物库；弊端就是操作dom频繁，性能会受到影响，但是影响不大。<br>  主要实现的功能：</p>
-<pre><code>* 新建事项
-* 标记事项为完成/未完成状态
-* 删除某事项
-* 清空全部事项
-* 事项置顶
-* 动画优化
-* 移动端优化
-</code></pre><p>  具体的代码可以到github库中查看下载<a href="https://github.com/McCarthey/A-To-do-list" target="_blank" rel="external">A-To-do-list Github</a></p>
-<h1 id="改造成PWA"><a href="#改造成PWA" class="headerlink" title="改造成PWA"></a>改造成PWA</h1><p>  因为它是一个github page应用，在有网络的条件下可以随时访问。但是有些应用场景网络连接受限不畅通，或者是使用者忘记打开移动数据等，这些问题都会导致用户无法使用或者体验不佳。因此我将其升级成了PWA，使得用户可以将其放入手机主屏，而不用打开浏览器输入烦人的url，同时使其离线可访问(因为数据都是存放在浏览器的localStorage中，无需网络即可写入、读取)。</p>
-<h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><p>  未对用户输入做过滤，会收到XSS攻击(未来会补充)</p>
-
-    
-
-    
-</div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-
-
-
-
-
-
-
-                
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            一个to-do list也要玩花样？没错，没有存储功能的to-do list几乎没有实用价值。demo地址=&gt;
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2017/06/14/to-do-list/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/Vass.jpg" width="44px" height="44px" alt="McCarthey's avatar">
             </div>
+            <div>
+                <strong>McCarthey</strong>
+                <span>6月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+            <!-- Category -->
+            <span class="post_entry-category">
+                
+            </span>
 
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
-        <a href="/2017/08/14/node-js部署到阿里云(上)/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
+            
 
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
+            
 
-    <!-- Next Nav -->
-    
-        <a href="/2017/06/01/blog/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
-    
-</nav>
-
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
         </div>
     </div>
+</div>
 
+            
+            
+        
+    
+
+    
+
+    
+        <script>
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
+</script>
+
+    
+</div>
 
 
                     
@@ -628,14 +472,6 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
-
-                    
-                        <!-- Footer Top Button -->
-                        <div class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
 
                     
 
