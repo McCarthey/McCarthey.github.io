@@ -10,7 +10,13 @@
 <p>我们的免费静态blog通常都是使用github pages搭建，套上各种炫酷的hexo主题(强烈推荐<a href="https://material.viosey.com/" target="_blank" rel="external">Material</a>主题，国人老铁做的，尽享MD设计之美)，或是使用<a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a>生成。搭建出来的博客效果很好，除了一个致命的缺点，<strong>慢！</strong>在国内访问我们的站点真的是巨慢，即使是把静态资源放到CDN上，也还是慢。慢到什么程度，放张图感受下：<br><img src="/img/post/coding.net/github page.png" alt="github pages"><br>页面完全载入需要40多秒……不过也可能是我的主题静态资源太多导致的时间过长。</p>
 <p>现在让我们把项目托管到<a href="https://coding.net/" target="_blank" rel="external">coding.net</a>上，注册帐号=&gt;创建仓库=&gt;启用pages服务=&gt;部署公钥这些步骤就不细细说明了，和github上面的操作大体相同。<br>我们只需要修改一下hexo主目录下的配置文件_config.yml就好了，即添加上coding的代码库地址，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">type: git</div><div class="line">repository:</div><div class="line">  github: git@github.com:XXXXX/XXXX.github.io.git</div><div class="line">  coding: git@git.coding.net:XXXX/XXXX.git</div></pre></td></tr></table></figure></p>
 <p>这样我们每次deploy的时候就会同时更新github和coding的代码库，使之同步。</p>
-<p>现在让我们来看一看打开coding pages的速度吧：<br><img src="/img/post/coding.net/coding page.png" alt="coding pages"><br>页面完全载入的时间大约是github page的1/30……<br>要知道&gt; 用户多等100ms,流失率增加1% &gt; - 腾讯说的<br>你算算我们提速后可以多挽留住多少用户啊(答案是0，因为我们的站点根本就没有被百度、google收录LOL)</p>
+<p>现在让我们来看一看打开coding pages的速度吧：<br><img src="/img/post/coding.net/coding page.png" alt="coding pages"><br>页面完全载入的时间大约是github page的1/30……(虽然我不知道为什么资源请求数比github.io的少了那么多)<br>要知道</p>
+<blockquote>
+<p>用户多等100ms,流失率增加1% </p>
+<ul>
+<li>腾讯说的<br>你算算我们提速后可以多挽留住多少用户啊(答案是0，因为我们的站点根本就没有被百度、google收录LOL)</li>
+</ul>
+</blockquote>
 ]]></content>
       
         
