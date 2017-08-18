@@ -10,7 +10,7 @@
     
     <title>
         
-            node.js部署到阿里云(上) | 
+            标签: 云服务器 | 
         
         McCarthey&#39;s Blog
     </title>
@@ -34,7 +34,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="McCarthey">
     <meta name="description" content="This is McCarthey&#39;s blog">
-    <meta name="keywords" content="mccarthey blog 前端 js 博客,云服务器,node.js">
+    <meta name="keywords" content="mccarthey blog 前端 js 博客">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -60,9 +60,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://mccarthey.coding.me">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="node.js部署到阿里云(上) | McCarthey&#39;s Blog">
+    <meta property="og:title" content="标签: 云服务器 | McCarthey&#39;s Blog">
     <meta property="og:description" content="This is McCarthey&#39;s blog">
-    <meta property="og:article:tag" content="云服务器"> <meta property="og:article:tag" content="node.js"> 
+    
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -237,244 +237,157 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
-
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
     
-    <!-- Back Button -->
-    <!--
-    <div class="material-back" id="backhome-div" tabindex="0">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
-           href="#" onclick="window.history.back();return false;"
-           target="_self"
-           role="button"
-           data-upgraded=",MaterialButton,MaterialRipple">
-            <i class="material-icons" role="presentation">arrow_back</i>
-            <span class="mdl-button__ripple-container">
-                <span class="mdl-ripple"></span>
-            </span>
-        </a>
-    </div>
-    -->
+    <div class="locate-thumbnail-symbol"></div>
 
-    <!-- Left aligned menu below button -->
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
+    <!-- Pin on top -->
+    
 
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#阿里云免费试用有毒"><span class="post-toc-number">1.</span> <span class="post-toc-text">阿里云免费试用有毒</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#这东西咋用？"><span class="post-toc-number">2.</span> <span class="post-toc-text">这东西咋用？</span></a></li></ol>
-
-        <!--
-        <li class="mdl-menu__item">
-            Some Action
-        </li>
-        -->
-    </ul>
-
-
-
-
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script>
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
         
     
-            <p class="article-headline-p">
-                node.js部署到阿里云(上)
-            </p>
-        </div>
 
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/Vass.jpg" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>McCarthey</strong>
-        <span>8月 14, 2017</span>
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2017/08/16/node-js部署到阿里云(下)/">node.js部署到阿里云(下)</a></p>
     </div>
 
-    <div class="section-spacer"></div>
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            接上文讲述服务器node.js环境部署及程序运行
 
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">devices other</i>
-            <span class="visuallyhidden">devices other</span>
-        </button>
-        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
-            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAACz0lEQVR42u3aQVLkMBAEwPn/p+G6F+yqliG8UvpEDMZWigiK7tbn68jrg42NjY2NjY2Njf1K9ie+fnzc5T3/fp48c/acZM3Y2NjYe7Nv/vSX7J9ef026vj95zvWasbGxsU9gr7w+/9mbmPmF92JjY2Njr9yTgNsSCBsbGxv7WfZ6tMyejI2NjY09a9Ak0dKWGXV76O97adjY2NivZ+dD0/d8/afzbWxsbOwXs9trVlo8VcYsrRwbGxt7U/ZKmz7foFkR8uw6sbGxsU9jJ+E0C7lZQ+q6wRT9LDY2NvZh7JXP802sQ2g0fsbGxsY+gX1NascJ+YA2HxvXcYWNjY19DLs9IrNydDI/ytNuRPQWbGxs7E3Z7b/+OW9Gmv0ylga92NjY2Nux84XOiplZqTMLS2xsbOxz2HUYxKPcPALrdn/7OTY2Nvam7PUFPVVI5HGVDA9uShFsbGzsTdmzplK7fcnGtRsaDTCwsbGxN2W3pUIbG0lczTalHidjY2Njb8rOh7hJbOTj2LykyYPt5rvY2NjYW7PzkFhZen5P28yKQhQbGxt7a/ZKdLXBljewkiBMvouNjY29NzsvJ/JNaRc628RkUIGNjY19DjsKgNGhmdmYNi9+iqM/2NjY2Juy85bN7P58DNyOKNpGGDY2Nvau7Dx+ZqPcZLPy6JqNpbGxsbHPYbdD2Vnpkm/QbBhQBxg2Njb2duwZbFZCtJHZFkXY2NjYp7Fnr0/YbZjNrqX5NjY2NvZ/y26v/HjNLISeeu9NUwkbGxt7I/YsHvKGfovJA/WBQS82Njb2Ruw8tPJx7PUS2+HxLDixsbGxT2PnLfv869koIm9aPXz4EhsbG/tgdhIteVu/bVFFh0SxsbGxsZebUEnBs/K0Xw8wbGxs7NezZ038lfZ9ezAop2JjY2Ofxp41bvLtmxUh64GKjY2NfQL7nAsbGxsbGxsbGxv7Ndc30YgVR7Cj14UAAAAASUVORK5CYII=">
-        </ul>
-    
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/node-js/">node.js</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/云服务器/">云服务器</a>
-    </ul>
-    
-
-    <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=node.js部署到阿里云(上)&url=https://mccarthey.coding.me//2017/08/14/node-js部署到阿里云(上)/index.html&pic=&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-
-    <!-- Share Facebook -->
-    
-
-    <!-- Share Google+ -->
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=McCarthey&#39;s Blog&title=node.js部署到阿里云(上)&summary=This is McCarthey&#39;s blog&pics=https://mccarthey.coding.me/img/favicon.png&url=https://mccarthey.coding.me/2017/08/14/node-js部署到阿里云(上)/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 QQ
-            </li>
-        </a>
-    
-
-    <!-- Share Telegram -->
-    
-</ul>
-
-</div>
-
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-    
-        <p>本文简述了阿里云服务器从抢购到部署的辛酸历程orz.</p>
-<h1 id="阿里云免费试用有毒"><a href="#阿里云免费试用有毒" class="headerlink" title="阿里云免费试用有毒"></a>阿里云免费试用有毒</h1><p>  我一直都想拥有一个自己的线上服务器，这样就可以把各种Demo、blog啥的都丢到上面去分(zhuang)享(bi)了。所以我会时不时的关注一下云服务器的价格，阿里云啊，腾讯云啊，都有看过，对比完价格后最大的感触就是自己浪费了学生身份。因为在进行在校大学生认证后，一台云服务器ECS只要9.9/月啊啊啊啊！<a href="https://promotion.aliyun.com/ntms/campus2017.html?spm=5176.7973419.812731.2.5954fc0bjy8n11" target="_blank" rel="external">学生优惠看这里</a>。<br>  <img src="/img/post/ali/student_price.png" alt="student_price"><br>  不过还好我机智，发现了<a href="https://free.aliyun.com" target="_blank" rel="external">免费6个月试用的活动</a>，美滋滋。<strong>但是，但是</strong>，免费的就意味着竞争，尤其是我们这种竞争激烈的人口大国，“某某手机一发售秒没”，“某某员工用脚本抢购月饼”啊，这种事我们早已司空见惯。</p>
-<p>  于是我打开了免费活动的领取页面，点击免费领取按钮时，提示我“亲，10点才开始发售哦”。我看了一下右下角的系统时间，9:56，哟喂，天祝我也，待我摩拳擦掌掰手腕扭脖子一番后，刚好9:59:40，我便开始狂点鼠标，浏览器当然还是提示我“亲，10点才开始发售哦”，当时间刚好到10:00:00时，我立即点击按钮，此时chrome卡了一下，我暗喜，心想“一定是抢到了”。然而等待我的是另一个提示框，“亲，今天的免费套餐已经领完了哦，请明天10点再试”。我qnmlgb！</p>
-<p>  <strong>等等！</strong>我刚刚是不是说了“用脚本抢购月饼”？这不是我老本行吗？写个脚本挂在那里一直刷不就完了吗？！我当即打开了chrome的<a href="https://tampermonkey.net/" target="_blank" rel="external">油猴</a>插件，边查看当前页面的DOM结构边写js，不一会儿就搞定了一个频率为50ms(太快怕浏览器崩-_-||)一次自动刷的脚本，简直ez pz。第二天我早早地登录了阿里云，待我摩拳擦掌掰手腕扭脖子一番后，于9:58打开了脚本开始丧心病狂的自动狂点抢购按钮(心疼按钮)，果不其然，hiahiahiahiahia，终于，TMD还是没抢到……</p>
-<p>  WTF？50ms太慢了吗？为啥一到10:00又是秒没？阿里你在逗我？既然免费试用没有了，那我就试试9.9试用6个月吧(服务器跟免费试用的一样，9.9的套餐只是多了一些其他服务，不过依然要抢，唉)。于是我立即切换到9.9元试用的套餐页，继续刷这里的抢购按钮，bingo，抢到了！9.9的也不错，至少能用6个月呢，到时候续不续费再两说。</p>
-<h1 id="这东西咋用？"><a href="#这东西咋用？" class="headerlink" title="这东西咋用？"></a>这东西咋用？</h1><p>  千辛万苦抢到了9.9的使用套餐，然而，<strong>这东西咋用啊？</strong>ECS是什么？我选哪个地区的服务器？CentOS系统？弹性IP什么鬼？安全组怎么设置？……后悔上学时没好好学习网络服务器相关的课程，就连linux的系统都不熟悉，在这里给各位想要使用阿里云但又对服务器网络不太熟悉的同学列出一些tips：</p>
-<pre><code>* 购买完服务器后立即创建一个实例，地区就近选择，其实各个区域延迟差不多，不必过于纠结
-* 一点儿也不懂linux系统的同学还是选择windos server系统吧
-* 稍稍知道一点儿linux最好使用CentOS，坑少
-* 安全组配置可以默认，以后需要的时候再来添加
-* 弹性公网IP还是不要勾选的好
-* 如果你的机器是window系统，而服务器选择的是CentOS等linux系统的话，下载一个PuTTY，用来连接服务器
-* 想要做微信后台的同学顺手再注册一个域名，因为微信不支持IP:port类型的url，必须要有域名
-* 数据库的坑我还没踩，日后补充......
-</code></pre><p>(未完待续…)</p>
-
-    
-
-    
-</div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-
-
-
-
-
-
-
-                
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2017/08/16/node-js部署到阿里云(下)/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/Vass.jpg" width="44px" height="44px" alt="McCarthey's avatar">
             </div>
+            <div>
+                <strong>McCarthey</strong>
+                <span>8月 16, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+            <!-- Category -->
+            <span class="post_entry-category">
+                
+            </span>
 
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
-        <a href="/2017/08/16/node-js部署到阿里云(下)/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
+            
 
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
+            
 
-    <!-- Next Nav -->
-    
-        <a href="/2017/06/14/to-do-list/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
-    
-</nav>
-
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
         </div>
     </div>
+</div>
 
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2017/08/14/node-js部署到阿里云(上)/">node.js部署到阿里云(上)</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            本文简述了阿里云服务器从抢购到部署的辛酸历程orz.
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2017/08/14/node-js部署到阿里云(上)/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/Vass.jpg" width="44px" height="44px" alt="McCarthey's avatar">
+            </div>
+            <div>
+                <strong>McCarthey</strong>
+                <span>8月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+            <!-- Category -->
+            <span class="post_entry-category">
+                
+            </span>
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+
+    
+        <script>
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
+</script>
+
+    
+</div>
 
 
                     
@@ -620,14 +533,6 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
-
-                    
-                        <!-- Footer Top Button -->
-                        <div class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
 
                     
 
