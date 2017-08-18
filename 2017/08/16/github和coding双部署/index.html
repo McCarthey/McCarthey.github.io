@@ -34,7 +34,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="McCarthey">
     <meta name="description" content="This is McCarthey&#39;s blog">
-    <meta name="keywords" content="mccarthey blog 前端 js 博客">
+    <meta name="keywords" content="mccarthey blog 前端 js 博客,github coding blog">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -62,7 +62,7 @@
     <meta property="og:type" content="blog">
     <meta property="og:title" content="github和coding双部署 | McCarthey&#39;s Blog">
     <meta property="og:description" content="This is McCarthey&#39;s blog">
-    
+    <meta property="og:article:tag" content="github coding blog"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -263,7 +263,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#coding托管"><span class="post-toc-number">1.</span> <span class="post-toc-text">coding托管</span></a></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -287,17 +287,8 @@
                 
     <!-- Paradox Post Header -->
     
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script>
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
-        
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/post/coding.net/coding.png)">
     
             <p class="article-headline-p">
                 github和coding双部署
@@ -352,7 +343,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/github-coding-blog/">github coding blog</a>
     </ul>
     
 
@@ -408,6 +399,8 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p>github pages太慢？不打紧，国内用coding.net托管就好啦</p>
+<h1 id="coding托管"><a href="#coding托管" class="headerlink" title="coding托管"></a>coding托管</h1><p><a href="https://coding.net/" target="_blank" rel="external">coding</a>和github一样，也是基于git的代码托管网站。<br>相比于github，在国内coding的访问、部署速度都要快一些，而且可以免费创建私人代码库哦。</p>
+<p>我们的免费静态blog通常都是使用github pages搭建，套上各种炫酷的hexo主题(强烈推荐<a href="https://material.viosey.com/" target="_blank" rel="external">Material</a>主题，国人老铁做的，尽享MD设计之美)，或是使用<a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a>生成。搭建出来的博客效果很好，除了一个致命的缺点，<strong>慢！</strong>在国内访问我们的站点真的是巨慢，即使是把静态资源放到CDN上，也还是慢。慢到什么程度，放张图感受下：</p>
 
     
 

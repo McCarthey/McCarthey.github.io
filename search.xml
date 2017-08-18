@@ -6,8 +6,16 @@
       <title><![CDATA[github和coding双部署]]></title>
       <url>/2017/08/16/github%E5%92%8Ccoding%E5%8F%8C%E9%83%A8%E7%BD%B2/</url>
       <content type="html"><![CDATA[<p>github pages太慢？不打紧，国内用coding.net托管就好啦</p>
+<h1 id="coding托管"><a href="#coding托管" class="headerlink" title="coding托管"></a>coding托管</h1><p><a href="https://coding.net/" target="_blank" rel="external">coding</a>和github一样，也是基于git的代码托管网站。<br>相比于github，在国内coding的访问、部署速度都要快一些，而且可以免费创建私人代码库哦。</p>
+<p>我们的免费静态blog通常都是使用github pages搭建，套上各种炫酷的hexo主题(强烈推荐<a href="https://material.viosey.com/" target="_blank" rel="external">Material</a>主题，国人老铁做的，尽享MD设计之美)，或是使用<a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a>生成。搭建出来的博客效果很好，除了一个致命的缺点，<strong>慢！</strong>在国内访问我们的站点真的是巨慢，即使是把静态资源放到CDN上，也还是慢。慢到什么程度，放张图感受下：</p>
 ]]></content>
       
+        
+        <tags>
+            
+            <tag> github coding blog </tag>
+            
+        </tags>
         
     </entry>
     
