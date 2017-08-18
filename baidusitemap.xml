@@ -4,6 +4,27 @@
 
     
   <url>
+    <loc>https://mccarthey.coding.me/2017/08/16/github%E5%92%8Ccoding%E5%8F%8C%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2017-08-18T07:53:42.433Z</lastmod>
+    <data>
+        <display>
+        <title>github和coding双部署</title>
+        <pubTime>2017-08-16T08:39:00.000Z</pubTime>
+        
+        <tag>github</tag>
+         
+        <tag>blog</tag>
+         
+        <tag>coding</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://mccarthey.coding.me/2017/06/14/to-do-list/</loc>
     <lastmod>2017-08-18T03:50:34.535Z</lastmod>
     <data>
@@ -75,27 +96,6 @@
         <tag>hexo</tag>
          
         <tag>blog</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://mccarthey.coding.me/2017/08/16/github%E5%92%8Ccoding%E5%8F%8C%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2017-08-18T03:49:00.632Z</lastmod>
-    <data>
-        <display>
-        <title>github和coding双部署</title>
-        <pubTime>2017-08-16T08:39:00.000Z</pubTime>
-        
-        <tag>github</tag>
-         
-        <tag>blog</tag>
-         
-        <tag>coding</tag>
          
          
            
