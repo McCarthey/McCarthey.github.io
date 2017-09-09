@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[vue实践（一）————天气预报小应用]]></title>
       <url>/2017/09/09/vue-weather/</url>
-      <content type="html"><![CDATA[<p>一个调用<a href="https://www.seniverse.com" target="_blank" rel="external">心知天气</a>的web app。<br>demo地址=&gt;<a href="http://mccarthey.coding.me/weather">vue-weather</a></p>
+      <content type="html"><![CDATA[<p>天气预报小应用<br>调用<a href="https://www.seniverse.com" target="_blank" rel="external">心知天气</a>的web app<br>demo地址=&gt;<a href="http://mccarthey.coding.me/weather">vue-weather</a></p>
 <h1 id="vue实践"><a href="#vue实践" class="headerlink" title="vue实践"></a>vue实践</h1>]]></content>
       
         
