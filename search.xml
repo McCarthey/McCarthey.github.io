@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title><![CDATA[vue实践（一）————天气预报小应用]]></title>
+      <url>/2017/09/09/vue-weather/</url>
+      <content type="html"><![CDATA[<p>一个调用<a href="https://www.seniverse.com" target="_blank" rel="external">心知天气</a>的web app。<br>demo地址=&gt;<a href="http://mccarthey.coding.me/weather">vue-weather</a></p>
+<h1 id="vue实践"><a href="#vue实践" class="headerlink" title="vue实践"></a>vue实践</h1>]]></content>
+      
+        
+        <tags>
+            
+            <tag> vue </tag>
+            
+            <tag> webpack </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[github和coding双部署]]></title>
       <url>/2017/08/16/github%E5%92%8Ccoding%E5%8F%8C%E9%83%A8%E7%BD%B2/</url>
       <content type="html"><![CDATA[<p>github pages太慢？不打紧，国内用coding.net托管就好啦</p>
@@ -26,9 +43,9 @@
             
             <tag> github </tag>
             
-            <tag> blog </tag>
-            
             <tag> coding </tag>
+            
+            <tag> blog </tag>
             
         </tags>
         
@@ -146,9 +163,9 @@
             
             <tag> github </tag>
             
-            <tag> hexo </tag>
-            
             <tag> blog </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
         
