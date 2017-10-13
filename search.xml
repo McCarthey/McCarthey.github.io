@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title><![CDATA[node.js小爬虫]]></title>
+      <url>/2017/10/13/node-js%E5%B0%8F%E7%88%AC%E8%99%AB/</url>
+      <content type="html"><![CDATA[<p>福利福利！用node.js爬<a href="http://jandan.net/ooxx" target="_blank" rel="external">煎蛋</a>妹子图！一行命令，百张妹图LOL</p>
+<p>github地址=&gt;<a href="https://github.com/McCarthey/jandan-spider" target="_blank" rel="external">传送门</a></p>
+<p>（需安装好<a href="https://nodejs.org/en/download/" target="_blank" rel="external">node.js</a>）使用很简单，把文件git clone下来后，cd到该目录，输入node first-spider命令运行程序，然后就等着看image文件夹下的嘿嘿嘿吧</p>
+<p>需要注意，程序默认爬10页，每页10张图。可以修改全局变量pageMax，imgMax来控制数量。</p>
+<p>（目前程序并没有控制请求的数量，如果请求的频次太高可能会被目标网站ban……）</p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> node.js </tag>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[vue实践（一）————天气预报小应用]]></title>
       <url>/2017/09/09/vue-weather/</url>
       <content type="html"><![CDATA[<p>天气预报小应用<br>调用<a href="https://www.seniverse.com" target="_blank" rel="external">心知天气</a>的web app<br>demo地址=&gt;<a href="http://mccarthey.coding.me/weather">vue-weather</a></p>
@@ -44,9 +65,9 @@
             
             <tag> github </tag>
             
-            <tag> coding </tag>
-            
             <tag> blog </tag>
+            
+            <tag> coding </tag>
             
         </tags>
         
@@ -71,9 +92,9 @@
         
         <tags>
             
-            <tag> 云服务器 </tag>
-            
             <tag> node.js </tag>
+            
+            <tag> 云服务器 </tag>
             
         </tags>
         
@@ -102,9 +123,9 @@
         
         <tags>
             
-            <tag> 云服务器 </tag>
-            
             <tag> node.js </tag>
+            
+            <tag> 云服务器 </tag>
             
         </tags>
         
@@ -164,9 +185,9 @@
             
             <tag> github </tag>
             
-            <tag> blog </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> blog </tag>
             
         </tags>
         
