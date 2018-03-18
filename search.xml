@@ -3,16 +3,33 @@
   
     
     <entry>
-      <title><![CDATA[node.js小爬虫]]></title>
-      <url>/2017/10/13/node-js%E5%B0%8F%E7%88%AC%E8%99%AB/</url>
-      <content type="html"><![CDATA[<p>福利福利！用node.js爬<a href="http://jandan.net/ooxx" target="_blank" rel="external">煎蛋</a>妹子图！一行命令，百张妹图LOL</p>
-<p>github地址=&gt;<a href="https://github.com/McCarthey/jandan-spider" target="_blank" rel="external">传送门</a></p>
-<p>（需安装好<a href="https://nodejs.org/en/download/" target="_blank" rel="external">node.js</a>）使用很简单，把文件git clone下来后，cd到该目录，输入node first-spider命令运行程序，然后就等着看image文件夹下的嘿嘿嘿吧</p>
-<p>需要注意，程序默认爬10页，每页10张图。可以修改全局变量pageMax，imgMax来控制数量。</p>
-<p>（目前程序并没有控制请求的数量，如果请求的频次太高可能会被目标网站ban……）</p>
-]]></content>
+      <title>Hello World</title>
+      <link href="/2018/03/05/hello-world/"/>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
-        
+      
+    </entry>
+    
+    <entry>
+      <title>nginx相关</title>
+      <link href="/2017/12/28/nginx%E7%9B%B8%E5%85%B3/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+        <tags>
+            
+            <tag> nginx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>node.js小爬虫</title>
+      <link href="/2017/10/13/node-js%E5%B0%8F%E7%88%AC%E8%99%AB/"/>
+      <content type="html"><![CDATA[<p>福利福利！用node.js爬<a href="http://jandan.net/ooxx" target="_blank" rel="noopener">煎蛋</a>妹子图！一行命令，百张妹图LOL</p><p>github地址=&gt;<a href="https://github.com/McCarthey/jandan-spider" target="_blank" rel="noopener">传送门</a></p><p>（需安装好<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js</a>）使用很简单，把文件git clone下来后，cd到该目录，输入node first-spider命令运行程序，然后就等着看image文件夹下的嘿嘿嘿吧</p><p>需要注意，程序默认爬10页，每页10张图。可以修改全局变量pageMax，imgMax来控制数量。</p><p>（目前程序并没有控制请求的数量，如果请求的频次太高可能会被目标网站ban……）</p>]]></content>
+      
+      
         <tags>
             
             <tag> node.js </tag>
@@ -20,17 +37,15 @@
             <tag> 爬虫 </tag>
             
         </tags>
-        
+      
     </entry>
     
     <entry>
-      <title><![CDATA[vue实践（一）————天气预报小应用]]></title>
-      <url>/2017/09/09/vue-weather/</url>
-      <content type="html"><![CDATA[<p>天气预报小应用<br>调用<a href="https://www.seniverse.com" target="_blank" rel="external">心知天气</a>的web app<br>demo地址=&gt;<a href="http://mccarthey.coding.me/weather">vue-weather</a></p>
-<p># </p>
-]]></content>
+      <title>vue实践（一）————天气预报小应用</title>
+      <link href="/2017/09/09/vue-weather/"/>
+      <content type="html"><![CDATA[<p>天气预报小应用<br>调用<a href="https://www.seniverse.com" target="_blank" rel="noopener">心知天气</a>的web app<br>demo地址=&gt;<a href="http://mccarthey.coding.me/weather">vue-weather</a></p><p># </p>]]></content>
       
-        
+      
         <tags>
             
             <tag> vue </tag>
@@ -38,29 +53,15 @@
             <tag> webpack </tag>
             
         </tags>
-        
+      
     </entry>
     
     <entry>
-      <title><![CDATA[github和coding双部署]]></title>
-      <url>/2017/08/16/github%E5%92%8Ccoding%E5%8F%8C%E9%83%A8%E7%BD%B2/</url>
-      <content type="html"><![CDATA[<p>github pages太慢？不打紧，国内用coding.net托管就好啦</p>
-<h1 id="coding托管"><a href="#coding托管" class="headerlink" title="coding托管"></a>coding托管</h1><p><a href="https://coding.net/" target="_blank" rel="external">coding</a> 和github一样，也是基于git的代码托管网站。<br>相比于github，在国内coding的访问、部署速度都要快一些，而且可以免费创建私人代码库哦。</p>
-<p>我们的免费静态blog通常都是使用github pages搭建，套上各种炫酷的hexo主题(强烈推荐 <a href="https://material.viosey.com/" target="_blank" rel="external">Material</a> 主题，国人老铁做的，尽享MD设计之美)，或是使用 <a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a> 生成。搭建出来的博客效果很好，除了一个致命的缺点，<strong>慢！</strong>在国内访问我们的站点真的是巨慢，即使是把静态资源放到CDN上，也还是慢。慢到什么程度，放张图感受下：</p>
-<p><img src="/img/post/coding.net/github page.png" alt="github pages"></p>
-<p>页面完全载入需要40多秒……不过也可能是我的主题静态资源太多导致的时间过长。</p>
-<p>现在让我们把项目托管到 <a href="https://coding.net/" target="_blank" rel="external">coding.net</a> 上，注册帐号=&gt;创建仓库=&gt;启用pages服务=&gt;部署公钥这些步骤就不细细说明了，和github上面的操作大体相同。<br>我们只需要修改一下hexo主目录下的配置文件_config.yml就好了，即添加上coding的代码库地址，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">type: git</div><div class="line">repository:</div><div class="line">  github: git@github.com:XXXXX/XXXX.github.io.git</div><div class="line">  coding: git@git.coding.net:XXXX/XXXX.git</div></pre></td></tr></table></figure></p>
-<p>这样我们每次deploy的时候就会同时更新github和coding的代码库，使之同步。</p>
-<p>现在让我们来看一看打开coding pages的速度吧：</p>
-<p><img src="/img/post/coding.net/coding page.png" alt="coding pages"></p>
-<p>页面完全载入的时间大约是github page的1/30……(虽然我不知道为什么资源请求数比github.io的少了那么多)<br>要知道</p>
-<blockquote>
-<p>用户多等100ms,流失率增加1% </p>
-</blockquote>
-<p>你算算我们提速后可以多挽留住多少用户啊(答案是0，因为我们的站点根本就没有被百度、google收录LOL)</p>
-]]></content>
+      <title>github和coding双部署</title>
+      <link href="/2017/08/16/github%E5%92%8Ccoding%E5%8F%8C%E9%83%A8%E7%BD%B2/"/>
+      <content type="html"><![CDATA[<p>github pages太慢？不打紧，国内用coding.net托管就好啦</p><h1 id="coding托管"><a href="#coding托管" class="headerlink" title="coding托管"></a>coding托管</h1><p><a href="https://coding.net/" target="_blank" rel="noopener">coding</a> 和github一样，也是基于git的代码托管网站。<br>相比于github，在国内coding的访问、部署速度都要快一些，而且可以免费创建私人代码库哦。</p><p>我们的免费静态blog通常都是使用github pages搭建，套上各种炫酷的hexo主题(强烈推荐 <a href="https://material.viosey.com/" target="_blank" rel="noopener">Material</a> 主题，国人老铁做的，尽享MD设计之美)，或是使用 <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> 生成。搭建出来的博客效果很好，除了一个致命的缺点，<strong>慢！</strong>在国内访问我们的站点真的是巨慢，即使是把静态资源放到CDN上，也还是慢。慢到什么程度，放张图感受下：</p><p><img src="/img/post/coding.net/github page.png" alt="github pages"></p><p>页面完全载入需要40多秒……不过也可能是我的主题静态资源太多导致的时间过长。</p><p>现在让我们把项目托管到 <a href="https://coding.net/" target="_blank" rel="noopener">coding.net</a> 上，注册帐号=&gt;创建仓库=&gt;启用pages服务=&gt;部署公钥这些步骤就不细细说明了，和github上面的操作大体相同。<br>我们只需要修改一下hexo主目录下的配置文件_config.yml就好了，即添加上coding的代码库地址，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br><span class="line">repository:</span><br><span class="line">  github: git@github.com:XXXXX/XXXX.github.io.git</span><br><span class="line">  coding: git@git.coding.net:XXXX/XXXX.git</span><br></pre></td></tr></table></figure></p><p>这样我们每次deploy的时候就会同时更新github和coding的代码库，使之同步。</p><p>现在让我们来看一看打开coding pages的速度吧：</p><p><img src="/img/post/coding.net/coding page.png" alt="coding pages"></p><p>页面完全载入的时间大约是github page的1/30……(虽然我不知道为什么资源请求数比github.io的少了那么多)<br>要知道</p><blockquote><p>用户多等100ms,流失率增加1% </p></blockquote><p>你算算我们提速后可以多挽留住多少用户啊(答案是0，因为我们的站点根本就没有被百度、google收录LOL)</p>]]></content>
       
-        
+      
         <tags>
             
             <tag> github </tag>
@@ -70,26 +71,15 @@
             <tag> coding </tag>
             
         </tags>
-        
+      
     </entry>
     
     <entry>
-      <title><![CDATA[node.js部署到阿里云(下)]]></title>
-      <url>/2017/08/16/node-js%E9%83%A8%E7%BD%B2%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91(%E4%B8%8B)/</url>
-      <content type="html"><![CDATA[<p>接上文讲述服务器node.js环境部署及程序运行</p>
-<h1 id="部署node-js环境"><a href="#部署node-js环境" class="headerlink" title="部署node.js环境"></a>部署node.js环境</h1><p>网上有几篇博客讲述如何在云服务器上部署node.js程序的，不过针对一点儿这方面知识都没有的小白来说，那几篇文章都忽略了一个<strong>关键性的问题</strong>，此处暂且按下不说，我们往下走。</p>
-<p>上文说道我们购买了一个服务器实例，并选择了windows server或CentOS(或其他可选的linux系统)系统，那么我们如何来登录服务器呢？这里推荐一下<a href="https://help.aliyun.com/document_detail/50775.html" target="_blank" rel="external">如何在阿里云部署node.js项目</a>，这是阿里云上的官方文档(由第三方提供-.- WTF!)。该文档很详细，也很基础，<strong>但是，</strong>如果你仅仅是按照该文档来一步一步操作的话，<strong>是跑不通服务器的!</strong>也就是说当你在浏览器中输入你的云服务器公网IP:prot(教程example.js中设置的监听端口)，是没卵用的！ping也ping不同！ </p>
-<p>这里就涉及到我说的那个<strong>关键性问题</strong>，不过此处仅仅针对不熟悉网络端口的同学。</p>
-<h1 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h1><p>还记得我们在购买实例时有一个<strong>安全组</strong>选项吗？我们不妨打开阿里云的控制台，找到导航里<strong>安全组</strong>选项，点击配置规则，默认配置应该如下图所示:<br><img src="/img/post/ali/port.png" alt="port"><br>我们可以看到服务器默认打开了80端口和22端口，它们都是必须的端口：</p>
-<ul>
-<li>22端口是ssh端口，我们就靠它来登录服务器</li>
-<li>80端口是HTTP端口，是网页默认的端口号，关了它我们就没法浪了～<h4 id="但是，端口是啥？干啥用的？"><a href="#但是，端口是啥？干啥用的？" class="headerlink" title="但是，端口是啥？干啥用的？"></a>但是，<strong><a href="https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E7%AB%AF%E5%8F%A3/792237?fr=aladdin" target="_blank" rel="external">端口</a>是啥？干啥用的？</strong></h4>我们知道服务器就是一台主机，我们租用的阿里云服务器也是如此。安全组就相当于是云服务器的防火墙，而端口就像是墙上的洞(-_-||)，它们穿透防火墙，从而建立服务器和外界通信的通道。对于普通用户来说，如果我们想让自己的主机或是服务器被外界访问到，那么我们就要开放(暴露)一个端口，这样其他人才能通过公网来访问我们的页面。</li>
-</ul>
-<p>让我们看看实例的安全组配置，并没有example.js中设置的3000端口，这就是我们ping不通的原因。现在让我们点击右上角的“添加安全组规则”按钮，按下图所示输入必要信息：<br><img src="/img/post/ali/add_port.png" alt="add port"><br>点击确定后，保险起见可以重启一下云服务器，然后再输入公网IP:3000，duang!你的Hello world出现了！</p>
-<p>享受一下成功的喜悦，然后尽情地撸代码吧lul！</p>
-]]></content>
+      <title>node.js部署到阿里云(下)</title>
+      <link href="/2017/08/16/node-js%E9%83%A8%E7%BD%B2%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91(%E4%B8%8B)/"/>
+      <content type="html"><![CDATA[<p>接上文讲述服务器node.js环境部署及程序运行</p><h1 id="部署node-js环境"><a href="#部署node-js环境" class="headerlink" title="部署node.js环境"></a>部署node.js环境</h1><p>网上有几篇博客讲述如何在云服务器上部署node.js程序的，不过针对一点儿这方面知识都没有的小白来说，那几篇文章都忽略了一个<strong>关键性的问题</strong>，此处暂且按下不说，我们往下走。</p><p>上文说道我们购买了一个服务器实例，并选择了windows server或CentOS(或其他可选的linux系统)系统，那么我们如何来登录服务器呢？这里推荐一下<a href="https://help.aliyun.com/document_detail/50775.html" target="_blank" rel="noopener">如何在阿里云部署node.js项目</a>，这是阿里云上的官方文档(由第三方提供-.- WTF!)。该文档很详细，也很基础，<strong>但是，</strong>如果你仅仅是按照该文档来一步一步操作的话，<strong>是跑不通服务器的!</strong>也就是说当你在浏览器中输入你的云服务器公网IP:prot(教程example.js中设置的监听端口)，是没卵用的！ping也ping不同！ </p><p>这里就涉及到我说的那个<strong>关键性问题</strong>，不过此处仅仅针对不熟悉网络端口的同学。</p><h1 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h1><p>还记得我们在购买实例时有一个<strong>安全组</strong>选项吗？我们不妨打开阿里云的控制台，找到导航里<strong>安全组</strong>选项，点击配置规则，默认配置应该如下图所示:<br><img src="/img/post/ali/port.png" alt="port"><br>我们可以看到服务器默认打开了80端口和22端口，它们都是必须的端口：</p><ul><li>22端口是ssh端口，我们就靠它来登录服务器</li><li>80端口是HTTP端口，是网页默认的端口号，关了它我们就没法浪了～<h4 id="但是，端口是啥？干啥用的？"><a href="#但是，端口是啥？干啥用的？" class="headerlink" title="但是，端口是啥？干啥用的？"></a>但是，<strong><a href="https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E7%AB%AF%E5%8F%A3/792237?fr=aladdin" target="_blank" rel="noopener">端口</a>是啥？干啥用的？</strong></h4>我们知道服务器就是一台主机，我们租用的阿里云服务器也是如此。安全组就相当于是云服务器的防火墙，而端口就像是墙上的洞(-_-||)，它们穿透防火墙，从而建立服务器和外界通信的通道。对于普通用户来说，如果我们想让自己的主机或是服务器被外界访问到，那么我们就要开放(暴露)一个端口，这样其他人才能通过公网来访问我们的页面。</li></ul><p>让我们看看实例的安全组配置，并没有example.js中设置的3000端口，这就是我们ping不通的原因。现在让我们点击右上角的“添加安全组规则”按钮，按下图所示输入必要信息：<br><img src="/img/post/ali/add_port.png" alt="add port"><br>点击确定后，保险起见可以重启一下云服务器，然后再输入公网IP:3000，duang!你的Hello world出现了！</p><p>享受一下成功的喜悦，然后尽情地撸代码吧lul！</p>]]></content>
       
-        
+      
         <tags>
             
             <tag> node.js </tag>
@@ -97,30 +87,15 @@
             <tag> 云服务器 </tag>
             
         </tags>
-        
+      
     </entry>
     
     <entry>
-      <title><![CDATA[node.js部署到阿里云(上)]]></title>
-      <url>/2017/08/14/node-js%E9%83%A8%E7%BD%B2%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91(%E4%B8%8A)/</url>
-      <content type="html"><![CDATA[<p>本文简述了阿里云服务器从抢购到部署的辛酸历程orz.</p>
-<h1 id="阿里云免费试用有毒"><a href="#阿里云免费试用有毒" class="headerlink" title="阿里云免费试用有毒"></a>阿里云免费试用有毒</h1><p>  我一直都想拥有一个自己的线上服务器，这样就可以把各种Demo、blog啥的都丢到上面去分(zhuang)享(bi)了。所以我会时不时的关注一下云服务器的价格，阿里云啊，腾讯云啊，都有看过，对比完价格后最大的感触就是自己浪费了学生身份。因为在进行在校大学生认证后，一台云服务器ECS只要9.9/月啊啊啊啊！<a href="https://promotion.aliyun.com/ntms/campus2017.html?spm=5176.7973419.812731.2.5954fc0bjy8n11" target="_blank" rel="external">学生优惠看这里</a>。<br>  <img src="/img/post/ali/student_price.png" alt="student_price"><br>  不过还好我机智，发现了<a href="https://free.aliyun.com" target="_blank" rel="external">免费6个月试用的活动</a>，美滋滋。<strong>但是，但是</strong>，免费的就意味着竞争，尤其是我们这种竞争激烈的人口大国，“某某手机一发售秒没”，“某某员工用脚本抢购月饼”啊，这种事我们早已司空见惯。</p>
-<p>  于是我打开了免费活动的领取页面，点击免费领取按钮时，提示我“亲，10点才开始发售哦”。我看了一下右下角的系统时间，9:56，哟喂，天祝我也，待我摩拳擦掌掰手腕扭脖子一番后，刚好9:59:40，我便开始狂点鼠标，浏览器当然还是提示我“亲，10点才开始发售哦”，当时间刚好到10:00:00时，我立即点击按钮，此时chrome卡了一下，我暗喜，心想“一定是抢到了”。然而等待我的是另一个提示框，“亲，今天的免费套餐已经领完了哦，请明天10点再试”。我qnmlgb！</p>
-<p>  <strong>等等！</strong>我刚刚是不是说了“用脚本抢购月饼”？这不是我老本行吗？写个脚本挂在那里一直刷不就完了吗？！我当即打开了chrome的<a href="https://tampermonkey.net/" target="_blank" rel="external">油猴</a>插件，边查看当前页面的DOM结构边写js，不一会儿就搞定了一个频率为50ms(太快怕浏览器崩-_-||)一次自动刷的脚本，简直ez pz。第二天我早早地登录了阿里云，待我摩拳擦掌掰手腕扭脖子一番后，于9:58打开了脚本开始丧心病狂的自动狂点抢购按钮(心疼按钮)，果不其然，hiahiahiahiahia，终于，TMD还是没抢到……</p>
-<p>  WTF？50ms太慢了吗？为啥一到10:00又是秒没？阿里你在逗我？既然免费试用没有了，那我就试试9.9试用6个月吧(服务器跟免费试用的一样，9.9的套餐只是多了一些其他服务，不过依然要抢，唉)。于是我立即切换到9.9元试用的套餐页，继续刷这里的抢购按钮，bingo，抢到了！9.9的也不错，至少能用6个月呢，到时候续不续费再两说。</p>
-<h1 id="这东西咋用？"><a href="#这东西咋用？" class="headerlink" title="这东西咋用？"></a>这东西咋用？</h1><p>  千辛万苦抢到了9.9的使用套餐，然而，<strong>这东西咋用啊？</strong>ECS是什么？我选哪个地区的服务器？CentOS系统？弹性IP什么鬼？安全组怎么设置？……后悔上学时没好好学习网络服务器相关的课程，就连linux的系统都不熟悉，在这里给各位想要使用阿里云但又对服务器网络不太熟悉的同学列出一些tips：</p>
-<pre><code>* 购买完服务器后立即创建一个实例，地区就近选择，其实各个区域延迟差不多，不必过于纠结
-* 一点儿也不懂linux系统的同学还是选择windos server系统吧
-* 稍稍知道一点儿linux最好使用CentOS，坑少
-* 安全组配置可以默认，以后需要的时候再来添加
-* 弹性公网IP还是不要勾选的好
-* 如果你的机器是window系统，而服务器选择的是CentOS等linux系统的话，下载一个PuTTY，用来连接服务器
-* 想要做微信后台的同学顺手再注册一个域名，因为微信不支持IP:port类型的url，必须要有域名
-* 数据库的坑我还没踩，日后补充......
-</code></pre><p>(未完待续…)</p>
-]]></content>
+      <title>node.js部署到阿里云(上)</title>
+      <link href="/2017/08/14/node-js%E9%83%A8%E7%BD%B2%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91(%E4%B8%8A)/"/>
+      <content type="html"><![CDATA[<p>本文简述了阿里云服务器从抢购到部署的辛酸历程orz.</p><h1 id="阿里云免费试用有毒"><a href="#阿里云免费试用有毒" class="headerlink" title="阿里云免费试用有毒"></a>阿里云免费试用有毒</h1><p>  我一直都想拥有一个自己的线上服务器，这样就可以把各种Demo、blog啥的都丢到上面去分(zhuang)享(bi)了。所以我会时不时的关注一下云服务器的价格，阿里云啊，腾讯云啊，都有看过，对比完价格后最大的感触就是自己浪费了学生身份。因为在进行在校大学生认证后，一台云服务器ECS只要9.9/月啊啊啊啊！<a href="https://promotion.aliyun.com/ntms/campus2017.html?spm=5176.7973419.812731.2.5954fc0bjy8n11" target="_blank" rel="noopener">学生优惠看这里</a>。<br>  <img src="/img/post/ali/student_price.png" alt="student_price"><br>  不过还好我机智，发现了<a href="https://free.aliyun.com" target="_blank" rel="noopener">免费6个月试用的活动</a>，美滋滋。<strong>但是，但是</strong>，免费的就意味着竞争，尤其是我们这种竞争激烈的人口大国，“某某手机一发售秒没”，“某某员工用脚本抢购月饼”啊，这种事我们早已司空见惯。</p><p>  于是我打开了免费活动的领取页面，点击免费领取按钮时，提示我“亲，10点才开始发售哦”。我看了一下右下角的系统时间，9:56，哟喂，天祝我也，待我摩拳擦掌掰手腕扭脖子一番后，刚好9:59:40，我便开始狂点鼠标，浏览器当然还是提示我“亲，10点才开始发售哦”，当时间刚好到10:00:00时，我立即点击按钮，此时chrome卡了一下，我暗喜，心想“一定是抢到了”。然而等待我的是另一个提示框，“亲，今天的免费套餐已经领完了哦，请明天10点再试”。我qnmlgb！</p><p>  <strong>等等！</strong>我刚刚是不是说了“用脚本抢购月饼”？这不是我老本行吗？写个脚本挂在那里一直刷不就完了吗？！我当即打开了chrome的<a href="https://tampermonkey.net/" target="_blank" rel="noopener">油猴</a>插件，边查看当前页面的DOM结构边写js，不一会儿就搞定了一个频率为50ms(太快怕浏览器崩-_-||)一次自动刷的脚本，简直ez pz。第二天我早早地登录了阿里云，待我摩拳擦掌掰手腕扭脖子一番后，于9:58打开了脚本开始丧心病狂的自动狂点抢购按钮(心疼按钮)，果不其然，hiahiahiahiahia，终于，TMD还是没抢到……</p><p>  WTF？50ms太慢了吗？为啥一到10:00又是秒没？阿里你在逗我？既然免费试用没有了，那我就试试9.9试用6个月吧(服务器跟免费试用的一样，9.9的套餐只是多了一些其他服务，不过依然要抢，唉)。于是我立即切换到9.9元试用的套餐页，继续刷这里的抢购按钮，bingo，抢到了！9.9的也不错，至少能用6个月呢，到时候续不续费再两说。</p><h1 id="这东西咋用？"><a href="#这东西咋用？" class="headerlink" title="这东西咋用？"></a>这东西咋用？</h1><p>  千辛万苦抢到了9.9的使用套餐，然而，<strong>这东西咋用啊？</strong>ECS是什么？我选哪个地区的服务器？CentOS系统？弹性IP什么鬼？安全组怎么设置？……后悔上学时没好好学习网络服务器相关的课程，就连linux的系统都不熟悉，在这里给各位想要使用阿里云但又对服务器网络不太熟悉的同学列出一些tips：</p><pre><code>* 购买完服务器后立即创建一个实例，地区就近选择，其实各个区域延迟差不多，不必过于纠结* 一点儿也不懂linux系统的同学还是选择windos server系统吧* 稍稍知道一点儿linux最好使用CentOS，坑少* 安全组配置可以默认，以后需要的时候再来添加* 弹性公网IP还是不要勾选的好* 如果你的机器是window系统，而服务器选择的是CentOS等linux系统的话，下载一个PuTTY，用来连接服务器* 想要做微信后台的同学顺手再注册一个域名，因为微信不支持IP:port类型的url，必须要有域名* 数据库的坑我还没踩，日后补充......</code></pre><p>(未完待续…)</p>]]></content>
       
-        
+      
         <tags>
             
             <tag> node.js </tag>
@@ -128,38 +103,15 @@
             <tag> 云服务器 </tag>
             
         </tags>
-        
+      
     </entry>
     
     <entry>
-      <title><![CDATA[可以本地存储的to-do list]]></title>
-      <url>/2017/06/14/to-do-list/</url>
-      <content type="html"><![CDATA[<p>一个to-do list也要玩花样？没错，没有存储功能的to-do list几乎没有实用价值。<br>demo地址=&gt;<a href="https://mccarthey.github.io/A-To-do-list" target="_blank" rel="external">A-To-do-list</a></p>
-<h1 id="localStorage简介"><a href="#localStorage简介" class="headerlink" title="localStorage简介"></a>localStorage简介</h1><p>  cookie一直都是Web开发人员用来存储数据的有效工具，但是cookie存在的一些问题限制了它的应用范围：</p>
-<pre><code>* 读取cookie需要冗余的代码
-* cookie是HTTP的功能而不是浏览器的
-* 浏览器限制了cookie的数量和大小(4KB)
-* cookie会过期
-</code></pre><p>  因此HTML5引入了Web存储功能–本地存储(localStorage)和会话存储(sessionStorage)。localStorage具有以下优点：</p>
-<pre><code>* 开发人员可以方便地设置、写入数据和读取数据
-* 拥有5MB(IE中有10MB)的超大存储空间
-* localStorage中的数据不会过期，永远有效，除非手动删除
-* 键/值对的存储方式，简单方便
-</code></pre><p>  具体使用方法可以参考<a href="http://www.w3school.com.cn/html5/html_5_webstorage.asp" target="_blank" rel="external">HTML5 Web存储</a>，保证5分钟内就能学会XD。</p>
-<h1 id="编程实现"><a href="#编程实现" class="headerlink" title="编程实现"></a>编程实现</h1><p>  因为只是个很小的应用，所以我并未引用任何第三方库，都是用原生js来操作dom实现的，好处是文件都很小，不会出现几百k的怪物库；弊端就是操作dom频繁，性能会受到影响，但是影响不大。<br>  主要实现的功能：</p>
-<pre><code>* 新建事项
-* 标记事项为完成/未完成状态
-* 删除某事项
-* 清空全部事项
-* 事项置顶
-* 动画优化
-* 移动端优化
-</code></pre><p>  具体的代码可以到github库中查看下载<a href="https://github.com/McCarthey/A-To-do-list" target="_blank" rel="external">A-To-do-list Github</a></p>
-<h1 id="改造成PWA"><a href="#改造成PWA" class="headerlink" title="改造成PWA"></a>改造成PWA</h1><p>  因为它是一个github page应用，在有网络的条件下可以随时访问。但是有些应用场景网络连接受限不畅通，或者是使用者忘记打开移动数据等，这些问题都会导致用户无法使用或者体验不佳。因此我将其升级成了PWA，使得用户可以将其放入手机主屏，而不用打开浏览器输入烦人的url，同时使其离线可访问(因为数据都是存放在浏览器的localStorage中，无需网络即可写入、读取)。</p>
-<h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><p>  未对用户输入做过滤，会收到XSS攻击(未来会补充)</p>
-]]></content>
+      <title>可以本地存储的to-do list</title>
+      <link href="/2017/06/14/to-do-list/"/>
+      <content type="html"><![CDATA[<p>一个to-do list也要玩花样？没错，没有存储功能的to-do list几乎没有实用价值。<br>demo地址=&gt;<a href="https://mccarthey.github.io/A-To-do-list" target="_blank" rel="noopener">A-To-do-list</a></p><h1 id="localStorage简介"><a href="#localStorage简介" class="headerlink" title="localStorage简介"></a>localStorage简介</h1><p>  cookie一直都是Web开发人员用来存储数据的有效工具，但是cookie存在的一些问题限制了它的应用范围：</p><pre><code>* 读取cookie需要冗余的代码* cookie是HTTP的功能而不是浏览器的* 浏览器限制了cookie的数量和大小(4KB)* cookie会过期</code></pre><p>  因此HTML5引入了Web存储功能–本地存储(localStorage)和会话存储(sessionStorage)。localStorage具有以下优点：</p><pre><code>* 开发人员可以方便地设置、写入数据和读取数据* 拥有5MB(IE中有10MB)的超大存储空间* localStorage中的数据不会过期，永远有效，除非手动删除* 键/值对的存储方式，简单方便</code></pre><p>  具体使用方法可以参考<a href="http://www.w3school.com.cn/html5/html_5_webstorage.asp" target="_blank" rel="noopener">HTML5 Web存储</a>，保证5分钟内就能学会XD。</p><h1 id="编程实现"><a href="#编程实现" class="headerlink" title="编程实现"></a>编程实现</h1><p>  因为只是个很小的应用，所以我并未引用任何第三方库，都是用原生js来操作dom实现的，好处是文件都很小，不会出现几百k的怪物库；弊端就是操作dom频繁，性能会受到影响，但是影响不大。<br>  主要实现的功能：</p><pre><code>* 新建事项* 标记事项为完成/未完成状态* 删除某事项* 清空全部事项* 事项置顶* 动画优化* 移动端优化</code></pre><p>  具体的代码可以到github库中查看下载<a href="https://github.com/McCarthey/A-To-do-list" target="_blank" rel="noopener">A-To-do-list Github</a></p><h1 id="改造成PWA"><a href="#改造成PWA" class="headerlink" title="改造成PWA"></a>改造成PWA</h1><p>  因为它是一个github page应用，在有网络的条件下可以随时访问。但是有些应用场景网络连接受限不畅通，或者是使用者忘记打开移动数据等，这些问题都会导致用户无法使用或者体验不佳。因此我将其升级成了PWA，使得用户可以将其放入手机主屏，而不用打开浏览器输入烦人的url，同时使其离线可访问(因为数据都是存放在浏览器的localStorage中，无需网络即可写入、读取)。</p><h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><p>  未对用户输入做过滤，会收到XSS攻击(未来会补充)</p>]]></content>
       
-        
+      
         <tags>
             
             <tag> to-do-list </tag>
@@ -169,18 +121,15 @@
             <tag> PWA </tag>
             
         </tags>
-        
+      
     </entry>
     
     <entry>
-      <title><![CDATA[Hexo之旅]]></title>
-      <url>/2017/06/01/blog/</url>
-      <content type="html"><![CDATA[<p>这是用Hexo折腾的第一篇blog</p>
-<p>之前的blog是自己用纯手工的方式一点一点的码的纯静态页面，当时写一篇blog特别累，要时刻注意标签有没有打错，注意嵌套关系，偶尔还要调整一下样式，最最最最令我气愤的就是每次要修改头部文件的时候，只能一个一个html手动去改……虽然找了些动态生成头/尾部的方法，但是对于纯静态页面来说，并没有合适的。直到某一天，我无意发现了<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>这个神器，在简单地看完其官网介绍后，我就已经被它的简单高效易用的特点吸引了。于是我当天就用<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>部署了自己的blog，从此便开始用MD开开心心地敲文章咯。</p>
-<p><em>另外，强烈推荐本站所使用的<strong><a href="https://material.viosey.com/" target="_blank" rel="external">Material</a></strong>的主题，清新，干净，响应式</em></p>
-]]></content>
+      <title>Hexo之旅</title>
+      <link href="/2017/06/01/blog/"/>
+      <content type="html"><![CDATA[<p>这是用Hexo折腾的第一篇blog</p><p>之前的blog是自己用纯手工的方式一点一点的码的纯静态页面，当时写一篇blog特别累，要时刻注意标签有没有打错，注意嵌套关系，偶尔还要调整一下样式，最最最最令我气愤的就是每次要修改头部文件的时候，只能一个一个html手动去改……虽然找了些动态生成头/尾部的方法，但是对于纯静态页面来说，并没有合适的。直到某一天，我无意发现了<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>这个神器，在简单地看完其官网介绍后，我就已经被它的简单高效易用的特点吸引了。于是我当天就用<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>部署了自己的blog，从此便开始用MD开开心心地敲文章咯。</p><p><em>另外，强烈推荐本站所使用的<strong><a href="https://material.viosey.com/" target="_blank" rel="noopener">Material</a></strong>的主题，清新，干净，响应式</em></p>]]></content>
       
-        
+      
         <tags>
             
             <tag> github </tag>
@@ -190,24 +139,7 @@
             <tag> blog </tag>
             
         </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>/2017/05/31/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
       
-        
     </entry>
     
   

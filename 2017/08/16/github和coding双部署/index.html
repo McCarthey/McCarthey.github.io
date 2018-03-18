@@ -408,11 +408,11 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p>github pages太慢？不打紧，国内用coding.net托管就好啦</p>
-<h1 id="coding托管"><a href="#coding托管" class="headerlink" title="coding托管"></a>coding托管</h1><p><a href="https://coding.net/" target="_blank" rel="external">coding</a> 和github一样，也是基于git的代码托管网站。<br>相比于github，在国内coding的访问、部署速度都要快一些，而且可以免费创建私人代码库哦。</p>
-<p>我们的免费静态blog通常都是使用github pages搭建，套上各种炫酷的hexo主题(强烈推荐 <a href="https://material.viosey.com/" target="_blank" rel="external">Material</a> 主题，国人老铁做的，尽享MD设计之美)，或是使用 <a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a> 生成。搭建出来的博客效果很好，除了一个致命的缺点，<strong>慢！</strong>在国内访问我们的站点真的是巨慢，即使是把静态资源放到CDN上，也还是慢。慢到什么程度，放张图感受下：</p>
+<h1 id="coding托管"><a href="#coding托管" class="headerlink" title="coding托管"></a>coding托管</h1><p><a href="https://coding.net/" target="_blank" rel="noopener">coding</a> 和github一样，也是基于git的代码托管网站。<br>相比于github，在国内coding的访问、部署速度都要快一些，而且可以免费创建私人代码库哦。</p>
+<p>我们的免费静态blog通常都是使用github pages搭建，套上各种炫酷的hexo主题(强烈推荐 <a href="https://material.viosey.com/" target="_blank" rel="noopener">Material</a> 主题，国人老铁做的，尽享MD设计之美)，或是使用 <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> 生成。搭建出来的博客效果很好，除了一个致命的缺点，<strong>慢！</strong>在国内访问我们的站点真的是巨慢，即使是把静态资源放到CDN上，也还是慢。慢到什么程度，放张图感受下：</p>
 <p><img src="/img/post/coding.net/github page.png" alt="github pages"></p>
 <p>页面完全载入需要40多秒……不过也可能是我的主题静态资源太多导致的时间过长。</p>
-<p>现在让我们把项目托管到 <a href="https://coding.net/" target="_blank" rel="external">coding.net</a> 上，注册帐号=&gt;创建仓库=&gt;启用pages服务=&gt;部署公钥这些步骤就不细细说明了，和github上面的操作大体相同。<br>我们只需要修改一下hexo主目录下的配置文件_config.yml就好了，即添加上coding的代码库地址，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">type: git</div><div class="line">repository:</div><div class="line">  github: git@github.com:XXXXX/XXXX.github.io.git</div><div class="line">  coding: git@git.coding.net:XXXX/XXXX.git</div></pre></td></tr></table></figure></p>
+<p>现在让我们把项目托管到 <a href="https://coding.net/" target="_blank" rel="noopener">coding.net</a> 上，注册帐号=&gt;创建仓库=&gt;启用pages服务=&gt;部署公钥这些步骤就不细细说明了，和github上面的操作大体相同。<br>我们只需要修改一下hexo主目录下的配置文件_config.yml就好了，即添加上coding的代码库地址，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br><span class="line">repository:</span><br><span class="line">  github: git@github.com:XXXXX/XXXX.github.io.git</span><br><span class="line">  coding: git@git.coding.net:XXXX/XXXX.git</span><br></pre></td></tr></table></figure></p>
 <p>这样我们每次deploy的时候就会同时更新github和coding的代码库，使之同步。</p>
 <p>现在让我们来看一看打开coding pages的速度吧：</p>
 <p><img src="/img/post/coding.net/coding page.png" alt="coding pages"></p>
@@ -553,7 +553,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
