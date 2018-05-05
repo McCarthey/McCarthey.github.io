@@ -408,7 +408,9 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p>小程序填坑不完全指南————那些文档中没告诉过你的事儿~</p>
-<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h4 id="1-button-组件"><a href="#1-button-组件" class="headerlink" title="1. button 组件"></a>1. button 组件</h4><p>button 可谓是我们最常使用的元素组件了，它在大多数情况下表现的也很正常，没毛病。但当我们希望定制 button 组件样式时，就可能会遇到一些问题，举个栗子：</p>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h4 id="1-button-组件"><a href="#1-button-组件" class="headerlink" title="1. button 组件"></a>1. button 组件</h4><p>button 可谓是我们最常使用的元素组件了，它在大多数情况下表现的也很正常，没毛病。但当我们希望定制 button 组件样式时，就可能会遇到一些问题，举个栗子：当我们想要取消 button 组件的边框时候，会发现仅仅设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">border:none;</span><br></pre></td></tr></table></figure>
+<p>这个属性是不够的，因为小程序中的 button 组件默认有一个伪元素：</p>
 
     
 
