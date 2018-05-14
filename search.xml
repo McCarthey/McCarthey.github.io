@@ -19,9 +19,9 @@
     </entry>
     
     <entry>
-      <title>nginx相关</title>
+      <title>Nginx相关</title>
       <link href="/2017/12/28/nginx%E7%9B%B8%E5%85%B3/"/>
-      <content type="html"><![CDATA[<p>好久没更新了。总结</p>]]></content>
+      <content type="html"><![CDATA[<p>好久没更新了。总结</p><h1 id="CentOS-下安装-Nginx"><a href="#CentOS-下安装-Nginx" class="headerlink" title="CentOS 下安装 Nginx"></a>CentOS 下安装 Nginx</h1>]]></content>
       
       
         <tags>
@@ -74,9 +74,9 @@
             
             <tag> github </tag>
             
-            <tag> coding </tag>
-            
             <tag> blog </tag>
+            
+            <tag> coding </tag>
             
         </tags>
       
@@ -90,9 +90,9 @@
       
         <tags>
             
-            <tag> node.js </tag>
-            
             <tag> 云服务器 </tag>
+            
+            <tag> node.js </tag>
             
         </tags>
       
@@ -106,9 +106,9 @@
       
         <tags>
             
-            <tag> node.js </tag>
-            
             <tag> 云服务器 </tag>
+            
+            <tag> node.js </tag>
             
         </tags>
       
@@ -117,7 +117,7 @@
     <entry>
       <title>可以本地存储的to-do list</title>
       <link href="/2017/06/14/to-do-list/"/>
-      <content type="html"><![CDATA[<p>一个to-do list也要玩花样？没错，没有存储功能的to-do list几乎没有实用价值。<br>demo地址=&gt;<a href="https://mccarthey.github.io/A-To-do-list" target="_blank" rel="noopener">A-To-do-list</a></p><h1 id="localStorage简介"><a href="#localStorage简介" class="headerlink" title="localStorage简介"></a>localStorage简介</h1><p>  cookie一直都是Web开发人员用来存储数据的有效工具，但是cookie存在的一些问题限制了它的应用范围：</p><pre><code>* 读取cookie需要冗余的代码* cookie是HTTP的功能而不是浏览器的* 浏览器限制了cookie的数量和大小(4KB)* cookie会过期</code></pre><p>  因此HTML5引入了Web存储功能–本地存储(localStorage)和会话存储(sessionStorage)。localStorage具有以下优点：</p><pre><code>* 开发人员可以方便地设置、写入数据和读取数据* 拥有5MB(IE中有10MB)的超大存储空间* localStorage中的数据不会过期，永远有效，除非手动删除* 键/值对的存储方式，简单方便</code></pre><p>  具体使用方法可以参考<a href="http://www.w3school.com.cn/html5/html_5_webstorage.asp" target="_blank" rel="noopener">HTML5 Web存储</a>，保证5分钟内就能学会XD。</p><h1 id="编程实现"><a href="#编程实现" class="headerlink" title="编程实现"></a>编程实现</h1><p>  因为只是个很小的应用，所以我并未引用任何第三方库，都是用原生js来操作dom实现的，好处是文件都很小，不会出现几百k的怪物库；弊端就是操作dom频繁，性能会受到影响，但是影响不大。<br>  主要实现的功能：</p><pre><code>* 新建事项* 标记事项为完成/未完成状态* 删除某事项* 清空全部事项* 事项置顶* 动画优化* 移动端优化</code></pre><p>  具体的代码可以到github库中查看下载<a href="https://github.com/McCarthey/A-To-do-list" target="_blank" rel="noopener">A-To-do-list Github</a></p><h1 id="改造成PWA"><a href="#改造成PWA" class="headerlink" title="改造成PWA"></a>改造成PWA</h1><p>  因为它是一个github page应用，在有网络的条件下可以随时访问。但是有些应用场景网络连接受限不畅通，或者是使用者忘记打开移动数据等，这些问题都会导致用户无法使用或者体验不佳。因此我将其升级成了PWA，使得用户可以将其放入手机主屏，而不用打开浏览器输入烦人的url，同时使其离线可访问(因为数据都是存放在浏览器的localStorage中，无需网络即可写入、读取)。</p><h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><p>  未对用户输入做过滤，会收到XSS攻击(未来会补充)</p>]]></content>
+      <content type="html"><![CDATA[<p>一个 to-do list 也要玩花样？没错，没有存储功能的 to-do list 几乎没有实用价值。<br>demo 地址=&gt;<a href="https://mccarthey.github.io/A-To-do-list" target="_blank" rel="noopener">A-To-do-list</a></p><h1 id="localStorage-简介"><a href="#localStorage-简介" class="headerlink" title="localStorage 简介"></a>localStorage 简介</h1><p>cookie 一直都是 Web 开发人员用来存储数据的有效工具，但是 cookie 存在的一些问题限制了它的应用范围：</p><ul><li>读取 cookie 需要冗余的代码</li><li>cookie 是 HTTP 的功能而不是浏览器的</li><li>浏览器限制了 cookie 的数量和大小(4KB)</li><li>cookie 会过期因此 HTML5 引入了 Web 存储功能–本地存储(localStorage)和会话存储(sessionStorage)。localStorage 具有以下优点：</li><li>开发人员可以方便地设置、写入数据和读取数据</li><li>拥有 5MB(IE 中有 10MB)的超大存储空间</li><li>localStorage 中的数据不会过期，永远有效，除非手动删除</li><li>键/值对的存储方式，简单方便具体使用方法可以参考<a href="http://www.w3school.com.cn/html5/html_5_webstorage.asp" target="_blank" rel="noopener">HTML5 Web 存储</a>，保证 5 分钟内就能学会 XD。</li></ul><h1 id="编程实现"><a href="#编程实现" class="headerlink" title="编程实现"></a>编程实现</h1><p>因为只是个很小的应用，所以我并未引用任何第三方库，都是用原生 js 来操作 dom 实现的，好处是文件都很小，不会出现几百 k 的怪物库；弊端就是操作 dom 频繁，性能会受到影响，但是影响不大。<br>主要实现的功能：</p><ul><li>新建事项</li><li>标记事项为完成/未完成状态</li><li>删除某事项</li><li>清空全部事项</li><li>事项置顶</li><li>动画优化</li><li>移动端优化具体的代码可以到 github 库中查看下载<a href="https://github.com/McCarthey/A-To-do-list" target="_blank" rel="noopener">A-To-do-list Github</a></li></ul><h1 id="改造成-PWA"><a href="#改造成-PWA" class="headerlink" title="改造成 PWA"></a>改造成 PWA</h1><p>因为它是一个 github page 应用，在有网络的条件下可以随时访问。但是有些应用场景网络连接受限不畅通，或者是使用者忘记打开移动数据等，这些问题都会导致用户无法使用或者体验不佳。因此我将其升级成了 PWA，使得用户可以将其放入手机主屏，而不用打开浏览器输入烦人的 url，同时使其离线可访问(因为数据都是存放在浏览器的 localStorage 中，无需网络即可写入、读取)。</p><h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><p>未对用户输入做过滤，会收到 XSS 攻击(未来会补充)</p>]]></content>
       
       
         <tags>
@@ -142,9 +142,9 @@
             
             <tag> github </tag>
             
-            <tag> blog </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
