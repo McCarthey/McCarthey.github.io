@@ -37,7 +37,7 @@
     <entry>
       <title>Nginx相关</title>
       <link href="/2017/12/28/nginx%E7%9B%B8%E5%85%B3/"/>
-      <content type="html"><![CDATA[<p>好久没更新了。总结</p><h1 id="CentOS-下安装-Nginx"><a href="#CentOS-下安装-Nginx" class="headerlink" title="CentOS 下安装 Nginx"></a>CentOS 下安装 Nginx</h1>]]></content>
+      <content type="html"><![CDATA[<p>好久没更新了……</p><h1 id="CentOS-下安装-Nginx"><a href="#CentOS-下安装-Nginx" class="headerlink" title="CentOS 下安装 Nginx"></a>CentOS 下安装 Nginx</h1><p>本人 Linux 用的不 6，因此每次安装 Nginx 都会参考这篇博文————<a href="https://www.linuxidc.com/Linux/2016-09/134907.htm" target="_blank" rel="noopener">CentOS 7 下安装 Nginx</a>，按照上面的指示一步一步来，绝对可以成功</p><h1 id="Nginx-配置"><a href="#Nginx-配置" class="headerlink" title="Nginx 配置"></a>Nginx 配置</h1><p>至于 Nginx 配置篇我会参考这边知乎专栏————<a href="https://zhuanlan.zhihu.com/p/27870472" target="_blank" rel="noopener">前后端分离配置篇</a></p>]]></content>
       
       
         <tags>
