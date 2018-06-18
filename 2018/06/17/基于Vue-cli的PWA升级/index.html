@@ -10,7 +10,7 @@
     
     <title>
         
-            归档: 2018/5 | 
+            基于Vue-cli的PWA升级 | 
         
         McCarthey&#39;s Blog
     </title>
@@ -34,7 +34,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="McCarthey">
     <meta name="description" content="This is McCarthey&#39;s blog">
-    <meta name="keywords" content="mccarthey blog 前端 js 博客">
+    <meta name="keywords" content="mccarthey blog 前端 js 博客,vue,PWA">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -60,9 +60,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://mccarthey.coding.me">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2018/5 | McCarthey&#39;s Blog">
+    <meta property="og:title" content="基于Vue-cli的PWA升级 | McCarthey&#39;s Blog">
     <meta property="og:description" content="This is McCarthey&#39;s blog">
-    
+    <meta property="og:article:tag" content="vue"> <meta property="og:article:tag" content="PWA"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -237,96 +237,221 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
 
-    <!-- Normal Post -->
-    
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
         
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/05/14/vue-to-do-list/">vue实践（二）———— VueToDoList</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            还记得我的那个原生 js 写的 to-do-list 吗？原 demo 地址=&gt;
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/05/14/vue-to-do-list/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/Vass.jpg" width="44px" height="44px" alt="McCarthey's avatar">
-            </div>
-            <div>
-                <strong>McCarthey</strong>
-                <span>5月 14, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                基于Vue-cli的PWA升级
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/Vass.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>McCarthey</strong>
+        <span>6月 17, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC2klEQVR42u3aQVLkMBAEwPn/p+HKAZuq1hAYKX0iGI+t1EZs0d16fRx5vbCxsbGxsbGxsbEfyX7FV3L/13u+efHtPVffuvpuvmZsbGzsE9g//Nd/+8qr+6+Q+UKTpyVrxsbGxj6HvRJI+abMNiLfRGxsbGzsPH6ufnMfQm15c1+0YGNjY2MPHxFEy6zwWC9ssLGxsU9mFw2aoA2UM5Ji5o97adjY2NiPZ7eD3if8/AfzbWxsbOxHstsraQnNxsN5i2q4cmxsbOxN2Xnrf1YYzD5NVpXfj42NjX0OO2/K5y2ndgxQMNpWFzY2NvZh7FkJkS90JSaHUYqNjY29KTtZVhs/bTTOxr31Pww2Njb2puzkD/q2SLhfVn5Ac6XBVDeVsLGxsbdjt0GVb0d7+HLlUBE2Njb2OexZRM2Gr0mR8xsNJmxsbOxd2XmMzQ5NtkXILMaithc2Njb2puxZ8LSHJmdLL8IpaV1hY2Njb8rOS4X2EOTsW3mhgo2NjY09i6I82GZFyOxTbGxsbOzZK1eGwbOSY3aIBxsbG3tvdhtX7RGcpeJhYXhcD3qxsbGx/y07CYlkoflguP19++kwt7GxsbE3YrfN/VlTaTaiyLfvbfNtbGxs7H/Izv/0n0VUG3VJcEblEDY2Nvam7JW2UVuKJFu8fkBzeFIJGxsbeyN20qBph7K/8fwk0rCxsbGx8zFA8fq3DhXyggQbGxt7V3bb+s8bPSvBlodfsXHY2NjYm7LzNk27lHZY28Zk+3ZsbGzsc9izgzXrYdN+t944bGxs7E3Zr/hqS5dk0S0+L5aiCgwbGxt7I/ZKcbJ+57sCrBj0YmNjY2/KbkNrfSScbHo7nChKEWxsbOwj2W2bfja4TZ7QHvHBxsbGxl4pDNafkwfnZQRiY2NjH8BOmkp5FOXUtrDJSyZsbGzsc9grg971Az2ztlFeGmFjY2PvzT7nwsbGxsbGxsbGxn7M9QmtPrnMxVhGhAAAAABJRU5ErkJggg==">
+        </ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/PWA/">PWA</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/vue/">vue</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=基于Vue-cli的PWA升级&url=https://mccarthey.coding.me//2018/06/17/基于Vue-cli的PWA升级/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=McCarthey&#39;s Blog&title=基于Vue-cli的PWA升级&summary=This is McCarthey&#39;s blog&pics=https://mccarthey.coding.me/img/favicon.png&url=https://mccarthey.coding.me/2018/06/17/基于Vue-cli的PWA升级/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/05/14/vue-to-do-list/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     

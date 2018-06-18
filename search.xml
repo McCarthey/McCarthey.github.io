@@ -3,6 +3,22 @@
   
     
     <entry>
+      <title>基于Vue-cli的PWA升级</title>
+      <link href="/2018/06/17/%E5%9F%BA%E4%BA%8EVue-cli%E7%9A%84PWA%E5%8D%87%E7%BA%A7/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+            <tag> PWA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>vue实践（二）———— VueToDoList</title>
       <link href="/2018/05/14/vue-to-do-list/"/>
       <content type="html"><![CDATA[<p>还记得我的那个原生 js 写的 to-do-list 吗？原 demo 地址=&gt;<a href="https://mccarthey.github.io/A-To-do-list" target="_blank" rel="noopener">A-To-do-list</a><br>这次使用 vue 来实现，demo 地址=&gt;<a href="https://mccarthey.github.io/VueToDoList/" target="_blank" rel="noopener">Vue-To-do-list</a></p><h1 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h1><p>为了解决上一个<a href="https://mccarthey.github.io/A-To-do-list" target="_blank" rel="noopener">to-do-list</a>应用原生 js 操作 DOM 而引起的网页性能问题，也是为了向一个<a href="https://www.freelancer.cn" target="_blank" rel="noopener">Freelancer</a>上认识的日本小哥介绍一下 Vue 这个框架，决定写一个 Vue 版本的 todolist 来说明。</p><h1 id="编程实现"><a href="#编程实现" class="headerlink" title="编程实现"></a>编程实现</h1><p>不多说，先上代码，仓库地址=&gt;<a href="https://github.com/McCarthey/VueToDoList" target="_blank" rel="noopener">VueToDoList</a>。</p><p>整个代码库很简单，因为是使用 vue-cli 的 webpack-simple 模板构建的，因此几乎没有配置修改的余地（毕竟只是一个小应用，也没涉及到代理、接口）。代码基本都写在 App.vue 中。</p><ul><li>列表渲染模板</li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">draggable</span> <span class="attr">v-model</span>=<span class="string">"myArray"</span> @<span class="attr">end</span>=<span class="string">"onDrop"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- transition/animation https://vuefe.cn/v2/guide/transitions.html --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">transition-group</span> <span class="attr">name</span>=<span class="string">"list"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-for</span>=<span class="string">"(element,index) in myArray"</span> <span class="attr">:key</span>=<span class="string">"index"</span> <span class="attr">class</span>=<span class="string">"draggable-item"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- A material design UI library for Vue.js, museUI  https://www.muse-ui.org --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mu-checkbox</span> <span class="attr">class</span>=<span class="string">"checkbox"</span> <span class="attr">v-model</span>=<span class="string">"element.done"</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mu-text-field</span> <span class="attr">v-model</span>=<span class="string">"element.text"</span> <span class="attr">hintText</span>=<span class="string">"写点儿什么吧"</span> @<span class="attr">blur</span>=<span class="string">"onSave"</span> <span class="attr">:disabled</span>=<span class="string">"element.done"</span> <span class="attr">:class</span>=<span class="string">"element.done? 'act-input-done': 'act-input' "</span> /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mu-icon-button</span> <span class="attr">icon</span>=<span class="string">"delete"</span> @<span class="attr">click</span>=<span class="string">"onDelete(index)"</span> <span class="attr">iconClass</span>=<span class="string">"icon-delete"</span>/&gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- 是否需要多行文本 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">transition-group</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">draggable</span>&gt;</span></span><br></pre></td></tr></table></figure><p>其中<code>v-for</code>循环渲染的<code>div</code>元素外层包裹了<code>&lt;transition-group&gt;</code>，用于展示元素的过渡动画（<a href="https://vuefe.cn/v2/guide/transitions.html#%E5%88%97%E8%A1%A8%E8%BF%87%E6%B8%A1" target="_blank" rel="noopener">可参考 vue 的官方文档</a>），因此这是可选的。而<code>&lt;transition-group&gt;</code>的外层又包裹了<code>&lt;draggable&gt;</code>元素，这里可参考<a href="https://www.npmjs.com/package/vuedraggable" target="_blank" rel="noopener">vuedraggable 的官方文档</a>。引入 vuedraggable 后列表元素就变成了可拖拽的，而不仅仅是之前版本的置顶操作（PS：其实这个需求是应女票要求加上的，没错，她是我这个小应用的忠实用户 :D ）。</p><ul><li>操作按钮</li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"op-btn_group"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"op-btn_group-left"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mu-raised-button</span> <span class="attr">label</span>=<span class="string">"新建"</span> <span class="attr">class</span>=<span class="string">"raised-button btn-new"</span> <span class="attr">backgroundColor</span>=<span class="string">"#4caf50"</span> @<span class="attr">click</span>=<span class="string">"onCreate"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"op-btn_group-right"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mu-raised-button</span> <span class="attr">label</span>=<span class="string">"保存"</span> <span class="attr">class</span>=<span class="string">"raised-button btn-save"</span> @<span class="attr">click</span>=<span class="string">"onSave"</span> <span class="attr">primary</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mu-raised-button</span> <span class="attr">label</span>=<span class="string">"清空"</span> <span class="attr">class</span>=<span class="string">"raised-button btn-delete"</span> @<span class="attr">click</span>=<span class="string">"onClearAll"</span> <span class="attr">secondary</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>然后是三个功能按钮，分别触发三种不同的事件:</p><ol><li>新建事件：在列表数组尾部添加一个对象元素</li><li>保存事件：将列表数组 JSON 字符串化，存入到 localStorage 中（键名依然是’mc_to_do_list’，数据的迁移下文会讲）</li><li>清空事件：弹出提示框，确认清空所有事件（删除 localStorage 中键名是’mc_to_do_list’的值）</li></ol><p>由于代码比较简单，就不贴出了，请直接在代码库里查看</p><ul><li>老数据迁移</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> listString = localStorage.getItem(<span class="string">'mc_to_do_list'</span>)</span><br><span class="line"><span class="keyword">let</span> list = <span class="built_in">JSON</span>.parse(listString)</span><br><span class="line"><span class="comment">// 老用户迁移 判断是数组还是对象</span></span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">Object</span>.prototype.toString.call(list) === <span class="string">'[object Object]'</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> result = []</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> k <span class="keyword">in</span> list) &#123;</span><br><span class="line">    <span class="keyword">let</span> newItem = &#123;&#125;</span><br><span class="line">    <span class="comment">// 取出id</span></span><br><span class="line">    newItem.id = <span class="built_in">Number</span>(k.split(<span class="string">'act'</span>)[<span class="number">1</span>])</span><br><span class="line">    newItem.text = list[k][<span class="string">'taskName'</span>]</span><br><span class="line">    newItem.done = list[k][<span class="string">'taskDone'</span>]</span><br><span class="line">    result.push(newItem)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>.myArray = result || []</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="keyword">this</span>.myArray = list || []</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'读取localStorage中的内容'</span>, list)</span><br></pre></td></tr></table></figure><p>可以看到，我在 created()生命周期中写了上面这一段，这样做是为了读取老版本的 to-do-list 的 localStorage 中的数据，老版本的是将对象转换成 JSON 字符串存储的，而该版本是将数组 JSON 字符串化存储的，因此需要做一个简单的数据转换，才能完成新老版本之间的数据迁移，让我的用户不至于因读取不了 localStorage 中的数据而一脸蒙。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>通过对比新老版本，我们可以发现使用原生 js 操作 dom 来渲染页面是有些繁琐的，而且对网页的性能也有很大的影响。而使用 Vue 等 MVVM 框架来重写这样的小应用是十分简单高效的。俗话说，麻雀虽小，五脏俱全，希望这篇 blog 能够帮助你理解 Vue。</p>]]></content>
@@ -90,9 +106,9 @@
             
             <tag> github </tag>
             
-            <tag> blog </tag>
-            
             <tag> coding </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
@@ -106,9 +122,9 @@
       
         <tags>
             
-            <tag> node.js </tag>
-            
             <tag> 云服务器 </tag>
+            
+            <tag> node.js </tag>
             
         </tags>
       
@@ -122,9 +138,9 @@
       
         <tags>
             
-            <tag> node.js </tag>
-            
             <tag> 云服务器 </tag>
+            
+            <tag> node.js </tag>
             
         </tags>
       
@@ -138,11 +154,11 @@
       
         <tags>
             
+            <tag> PWA </tag>
+            
             <tag> to-do-list </tag>
             
             <tag> localStorage </tag>
-            
-            <tag> PWA </tag>
             
         </tags>
       
@@ -158,9 +174,9 @@
             
             <tag> github </tag>
             
-            <tag> hexo </tag>
-            
             <tag> blog </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       

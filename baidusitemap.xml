@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>https://mccarthey.coding.me/2018/06/17/%E5%9F%BA%E4%BA%8EVue-cli%E7%9A%84PWA%E5%8D%87%E7%BA%A7/</loc>
+    <lastmod>2018-06-17T09:19:26.724Z</lastmod>
+    <data>
+        <display>
+        <title>基于Vue-cli的PWA升级</title>
+        <pubTime>2018-06-17T08:38:04.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+        <tag>PWA</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://mccarthey.coding.me/2018/03/28/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%A1%AB%E5%9D%91%E6%8C%87%E5%8D%97%E6%95%B4%E7%90%86/</loc>
     <lastmod>2018-05-27T03:20:04.052Z</lastmod>
     <data>
@@ -85,11 +104,11 @@
         <title>可以本地存储的to-do list</title>
         <pubTime>2017-06-14T03:47:46.000Z</pubTime>
         
+        <tag>PWA</tag>
+         
         <tag>to-do-list</tag>
          
         <tag>localStorage</tag>
-         
-        <tag>PWA</tag>
          
          
            
@@ -127,9 +146,9 @@
         
         <tag>github</tag>
          
-        <tag>blog</tag>
-         
         <tag>coding</tag>
+         
+        <tag>blog</tag>
          
          
            
@@ -146,9 +165,9 @@
         <title>node.js部署到阿里云(下)</title>
         <pubTime>2017-08-16T06:43:58.000Z</pubTime>
         
-        <tag>node.js</tag>
-         
         <tag>云服务器</tag>
+         
+        <tag>node.js</tag>
          
          
            
@@ -165,9 +184,9 @@
         <title>node.js部署到阿里云(上)</title>
         <pubTime>2017-08-14T03:33:43.000Z</pubTime>
         
-        <tag>node.js</tag>
-         
         <tag>云服务器</tag>
+         
+        <tag>node.js</tag>
          
          
            
@@ -186,9 +205,9 @@
         
         <tag>github</tag>
          
-        <tag>hexo</tag>
-         
         <tag>blog</tag>
+         
+        <tag>hexo</tag>
          
          
            
