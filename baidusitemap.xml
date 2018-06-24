@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>https://mccarthey.coding.me/2018/06/24/paypal%E6%94%AF%E4%BB%98%E7%BB%AD%E8%AE%A2%E6%8E%A5%E5%85%A5/</loc>
+    <lastmod>2018-06-24T15:56:56.032Z</lastmod>
+    <data>
+        <display>
+        <title>paypal支付续订接入.md</title>
+        <pubTime>2018-06-24T15:56:22.000Z</pubTime>
+        
+        <tag>paypal</tag>
+         
+        <tag>curl</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://mccarthey.coding.me/2018/06/17/%E5%9F%BA%E4%BA%8EVue-cli%E7%9A%84PWA%E5%8D%87%E7%BA%A7/</loc>
     <lastmod>2018-06-17T09:19:26.724Z</lastmod>
     <data>
@@ -146,9 +165,9 @@
         
         <tag>github</tag>
          
-        <tag>coding</tag>
-         
         <tag>blog</tag>
+         
+        <tag>coding</tag>
          
          
            
@@ -205,9 +224,9 @@
         
         <tag>github</tag>
          
-        <tag>blog</tag>
-         
         <tag>hexo</tag>
+         
+        <tag>blog</tag>
          
          
            
