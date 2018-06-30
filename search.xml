@@ -21,7 +21,7 @@
     <entry>
       <title>基于Vue-cli的PWA升级</title>
       <link href="/2018/06/17/%E5%9F%BA%E4%BA%8EVue-cli%E7%9A%84PWA%E5%8D%87%E7%BA%A7/"/>
-      <content type="html"><![CDATA[]]></content>
+      <content type="html"><![CDATA[<p>webpack配合插件：sw ,offline</p>]]></content>
       
       
         <tags>
@@ -138,9 +138,9 @@
       
         <tags>
             
-            <tag> 云服务器 </tag>
-            
             <tag> node.js </tag>
+            
+            <tag> 云服务器 </tag>
             
         </tags>
       
@@ -154,9 +154,9 @@
       
         <tags>
             
-            <tag> 云服务器 </tag>
-            
             <tag> node.js </tag>
+            
+            <tag> 云服务器 </tag>
             
         </tags>
       
@@ -170,11 +170,11 @@
       
         <tags>
             
-            <tag> PWA </tag>
-            
             <tag> to-do-list </tag>
             
             <tag> localStorage </tag>
+            
+            <tag> PWA </tag>
             
         </tags>
       
