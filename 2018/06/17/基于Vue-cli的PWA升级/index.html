@@ -263,7 +263,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#升级过程"><span class="post-toc-number">1.</span> <span class="post-toc-text">升级过程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-与七牛CDN结合使用"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">1.与七牛CDN结合使用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-缓存html文件"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">2.缓存html文件</span></a></li></ol></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -407,7 +407,12 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>webpack配合插件：sw ,offline</p>
+        <p>webpack核心插件：<a href="https://www.npmjs.com/package/offline-plugin" target="_blank" rel="noopener">offline-plugin</a> ,<a href="https://www.npmjs.com/package/sw-precache-webpack-plugin" target="_blank" rel="noopener">sw-precache-webpack-plugin</a></p>
+<h1 id="升级过程"><a href="#升级过程" class="headerlink" title="升级过程"></a>升级过程</h1><p>PWA相关知识在此不再赘述，之前的文章也提到过一些。我们主要需要manifest.json和service-worker.js。由于项目[loveblock]静态资源过多（图片+css+js共50+个请求），因此在service-worker的中需要拦截这些资源请求。</p>
+<p>插件的接入过程可参考插件的官方文档，写得很详细。在此仅叙述升级过程中遇到的问题:</p>
+<h3 id="1-与七牛CDN结合使用"><a href="#1-与七牛CDN结合使用" class="headerlink" title="1.与七牛CDN结合使用"></a>1.与七牛CDN结合使用</h3><p>一开始我使用的是<a href="https://www.npmjs.com/package/offline-plugin" target="_blank" rel="noopener">offline-plugin插件</a>，简单好用，但是控制台一直会报错，排查后发现是因为插件默认把service-worker的注册逻辑打包到了js中并上传到CDN，导致service-worker无法通过外部脚本注册</p>
+<h3 id="2-缓存html文件"><a href="#2-缓存html文件" class="headerlink" title="2.缓存html文件"></a>2.缓存html文件</h3><p>为解决上述问题，我换用了<a href="https://www.npmjs.com/package/sw-precache-webpack-plugin" target="_blank" rel="noopener">sw-precache-webpack-plugin插件</a>。这个插件就不存在上述问题，因为service-worker的注册是要我们手动完成的。因此，可以将以下代码添加进模板中（官方实例）:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(<span class="string">'serviceWorker'</span> <span class="keyword">in</span> navigator) &#123;</span><br><span class="line">    navigator.serviceWorker.register(<span class="string">'/service-worker.js'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p>
+<p>打包后会发现新生成了service-worker.js，里面有我们想要缓存的资源。我们发现资源缓存数组中的第一个元素就是XXXX.html，即是我们的html文件。<br>（未完待续）</p>
 
     
 
