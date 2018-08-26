@@ -10,9 +10,9 @@
       
         <tags>
             
-            <tag> vue </tag>
-            
             <tag> PWA </tag>
+            
+            <tag> vue </tag>
             
         </tags>
       
@@ -37,7 +37,7 @@
     <entry>
       <title>小程序填坑</title>
       <link href="/2018/03/28/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%A1%AB%E5%9D%91%E6%8C%87%E5%8D%97%E6%95%B4%E7%90%86/"/>
-      <content type="html"><![CDATA[<p>小程序填坑不完全指南————那些文档中没告诉过你的事儿~</p><h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h4 id="1-button-组件"><a href="#1-button-组件" class="headerlink" title="1. button 组件"></a>1. button 组件</h4><p>button 可谓是我们最常使用的元素组件了，它在大多数情况下表现的也很正常，没毛病。但当我们希望定制 button 组件样式时，就可能会遇到一些问题，举个栗子：当我们想要取消 button 组件的边框时候，会发现仅仅设置</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">border</span>: <span class="selector-tag">none</span>;</span><br></pre></td></tr></table></figure><p>这个属性是不够的，因为小程序中的 button 组件默认有一个伪元素：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">::after</span>;</span><br></pre></td></tr></table></figure><p>只有修改这个伪元素的 border 属性才可以生效，包括去掉默认边框、修改默认圆角等操作</p>]]></content>
+      <content type="html"><![CDATA[<p>小程序填坑不完全指南————那些文档中没告诉过你的事儿~</p><h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h4 id="1-button-组件"><a href="#1-button-组件" class="headerlink" title="1. button 组件"></a>1. button 组件</h4><p>button 可谓是我们最常使用的元素组件了，它在大多数情况下表现的也很正常，没毛病。但当我们希望定制 button 组件样式时，就可能会遇到一些问题，举个栗子：当我们想要取消 button 组件的边框时候，会发现仅仅设置</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">border</span>: <span class="selector-tag">none</span>;</span><br></pre></td></tr></table></figure><p>这个属性是不够的，因为小程序中的 button 组件默认有一个伪元素：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">::after</span>;</span><br></pre></td></tr></table></figure><p>只有修改这个伪元素的 border 属性才可以生效，包括去掉默认边框、修改默认圆角等操作</p><h3 id="2-textarea组件"><a href="#2-textarea组件" class="headerlink" title="2.textarea组件"></a>2.textarea组件</h3><p>IOS版本上存在bug，即删除任意字符，光标均会返回至文字末尾</p><h3 id="3-background-image"><a href="#3-background-image" class="headerlink" title="3.background-image"></a>3.background-image</h3><p>微信不允许在background-image属性上的url设置成相对路径。因此最好使用<image>标签结合定位实现背景图片效果。</image></p>]]></content>
       
       
         <tags>
@@ -122,9 +122,9 @@
       
         <tags>
             
-            <tag> node.js </tag>
-            
             <tag> 云服务器 </tag>
+            
+            <tag> node.js </tag>
             
         </tags>
       
@@ -138,9 +138,9 @@
       
         <tags>
             
-            <tag> node.js </tag>
-            
             <tag> 云服务器 </tag>
+            
+            <tag> node.js </tag>
             
         </tags>
       
@@ -154,11 +154,11 @@
       
         <tags>
             
-            <tag> PWA </tag>
-            
             <tag> to-do-list </tag>
             
             <tag> localStorage </tag>
+            
+            <tag> PWA </tag>
             
         </tags>
       
