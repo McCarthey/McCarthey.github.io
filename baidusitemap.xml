@@ -23,25 +23,6 @@
 
     
   <url>
-    <loc>https://mccarthey.coding.me/2018/06/24/paypal%E6%94%AF%E4%BB%98%E7%BB%AD%E8%AE%A2%E6%8E%A5%E5%85%A5/</loc>
-    <lastmod>2018-06-24T15:56:56.032Z</lastmod>
-    <data>
-        <display>
-        <title>paypal支付续订接入.md</title>
-        <pubTime>2018-06-24T15:56:22.000Z</pubTime>
-        
-        <tag>paypal</tag>
-         
-        <tag>curl</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://mccarthey.coding.me/2018/03/28/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%A1%AB%E5%9D%91%E6%8C%87%E5%8D%97%E6%95%B4%E7%90%86/</loc>
     <lastmod>2018-05-27T03:20:04.052Z</lastmod>
     <data>
@@ -123,11 +104,11 @@
         <title>可以本地存储的to-do list</title>
         <pubTime>2017-06-14T03:47:46.000Z</pubTime>
         
+        <tag>PWA</tag>
+         
         <tag>to-do-list</tag>
          
         <tag>localStorage</tag>
-         
-        <tag>PWA</tag>
          
          
            

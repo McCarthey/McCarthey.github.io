@@ -3,22 +3,6 @@
   
     
     <entry>
-      <title>paypal支付续订接入.md</title>
-      <link href="/2018/06/24/paypal%E6%94%AF%E4%BB%98%E7%BB%AD%E8%AE%A2%E6%8E%A5%E5%85%A5/"/>
-      <content type="html"><![CDATA[]]></content>
-      
-      
-        <tags>
-            
-            <tag> paypal </tag>
-            
-            <tag> curl </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>基于Vue-cli的PWA升级</title>
       <link href="/2018/06/17/%E5%9F%BA%E4%BA%8EVue-cli%E7%9A%84PWA%E5%8D%87%E7%BA%A7/"/>
       <content type="html"><![CDATA[<p>webpack配合插件：sw ,offline</p>]]></content>
@@ -170,11 +154,11 @@
       
         <tags>
             
+            <tag> PWA </tag>
+            
             <tag> to-do-list </tag>
             
             <tag> localStorage </tag>
-            
-            <tag> PWA </tag>
             
         </tags>
       
