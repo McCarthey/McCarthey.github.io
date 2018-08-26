@@ -10,7 +10,7 @@
     
     <title>
         
-            paypal支付续订接入.md | 
+            paypal支付续订接入ccbill支付接入.md | 
         
         McCarthey&#39;s Blog
     </title>
@@ -60,7 +60,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://mccarthey.coding.me">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="paypal支付续订接入.md | McCarthey&#39;s Blog">
+    <meta property="og:title" content="paypal支付续订接入ccbill支付接入.md | McCarthey&#39;s Blog">
     <meta property="og:description" content="This is McCarthey&#39;s blog">
     <meta property="og:article:tag" content="paypal"> <meta property="og:article:tag" content="curl"> 
 
@@ -263,7 +263,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#paypal支付"><span class="post-toc-number">1.</span> <span class="post-toc-text">paypal支付</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ccbill支付"><span class="post-toc-number">2.</span> <span class="post-toc-text">ccbill支付</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#支付测试"><span class="post-toc-number">3.</span> <span class="post-toc-text">支付测试</span></a></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -300,7 +300,7 @@
         
     
             <p class="article-headline-p">
-                paypal支付续订接入.md
+                paypal支付续订接入ccbill支付接入.md
             </p>
         </div>
 
@@ -368,7 +368,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=paypal支付续订接入.md&url=https://mccarthey.coding.me//2018/06/24/paypal支付续订接入/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=paypal支付续订接入ccbill支付接入.md&url=https://mccarthey.coding.me//2018/06/24/paypal支付续订接入/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -389,7 +389,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=McCarthey&#39;s Blog&title=paypal支付续订接入.md&summary=This is McCarthey&#39;s blog&pics=https://mccarthey.coding.me/img/favicon.png&url=https://mccarthey.coding.me/2018/06/24/paypal支付续订接入/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=McCarthey&#39;s Blog&title=paypal支付续订接入ccbill支付接入.md&summary=This is McCarthey&#39;s blog&pics=https://mccarthey.coding.me/img/favicon.png&url=https://mccarthey.coding.me/2018/06/24/paypal支付续订接入/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -407,7 +407,25 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <h2 id="paypal支付"><a href="#paypal支付" class="headerlink" title="paypal支付"></a>paypal支付</h2><ul>
+<li>paypal一次性支付仅走express checkout即可:<ul>
+<li>引入paypal/checkout.js</li>
+<li>放置需要展示的button元素（button样式定制程度较低，不可自定义css）</li>
+<li>发送请求，参数可参照payment restful接口</li>
+</ul>
+</li>
+<li>paypal续订<ul>
+<li>涉及到创建续订计划 -&gt; 激活续订计划 -&gt; 用户同意续订计划(支付) -&gt; 创建续订</li>
+<li>以上操作均为原子操作，任何一步报错或拒绝都要返回错误</li>
+</ul>
+</li>
+</ul>
+<h2 id="ccbill支付"><a href="#ccbill支付" class="headerlink" title="ccbill支付"></a>ccbill支付</h2><p>一次性支付、续订流程相同</p>
+<h2 id="支付测试"><a href="#支付测试" class="headerlink" title="支付测试"></a>支付测试</h2><ul>
+<li>paypal支付可使用sandbox环境（建议重新注册sandbox账号、商家账号，旧版账号登录sandbox有两个接口会报500）</li>
+<li>ccbill也支持sandbox环境，前提是需要登录过ccbill管理系统，然后在支付链接前缀上添加sandbox即可</li>
+</ul>
+
     
 
     

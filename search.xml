@@ -3,6 +3,22 @@
   
     
     <entry>
+      <title>paypal支付续订接入ccbill支付接入.md</title>
+      <link href="/2018/06/24/paypal%E6%94%AF%E4%BB%98%E7%BB%AD%E8%AE%A2%E6%8E%A5%E5%85%A5/"/>
+      <content type="html"><![CDATA[<h2 id="paypal支付"><a href="#paypal支付" class="headerlink" title="paypal支付"></a>paypal支付</h2><ul><li>paypal一次性支付仅走express checkout即可:<ul><li>引入paypal/checkout.js</li><li>放置需要展示的button元素（button样式定制程度较低，不可自定义css）</li><li>发送请求，参数可参照payment restful接口</li></ul></li><li>paypal续订<ul><li>涉及到创建续订计划 -&gt; 激活续订计划 -&gt; 用户同意续订计划(支付) -&gt; 创建续订</li><li>以上操作均为原子操作，任何一步报错或拒绝都要返回错误</li></ul></li></ul><h2 id="ccbill支付"><a href="#ccbill支付" class="headerlink" title="ccbill支付"></a>ccbill支付</h2><p>一次性支付、续订流程相同</p><h2 id="支付测试"><a href="#支付测试" class="headerlink" title="支付测试"></a>支付测试</h2><ul><li>paypal支付可使用sandbox环境（建议重新注册sandbox账号、商家账号，旧版账号登录sandbox有两个接口会报500）</li><li>ccbill也支持sandbox环境，前提是需要登录过ccbill管理系统，然后在支付链接前缀上添加sandbox即可</li></ul>]]></content>
+      
+      
+        <tags>
+            
+            <tag> paypal </tag>
+            
+            <tag> curl </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>基于Vue-cli的PWA升级</title>
       <link href="/2018/06/17/%E5%9F%BA%E4%BA%8EVue-cli%E7%9A%84PWA%E5%8D%87%E7%BA%A7/"/>
       <content type="html"><![CDATA[<p>webpack核心插件：<a href="https://www.npmjs.com/package/offline-plugin" target="_blank" rel="noopener">offline-plugin</a> ,<a href="https://www.npmjs.com/package/sw-precache-webpack-plugin" target="_blank" rel="noopener">sw-precache-webpack-plugin</a></p><h1 id="升级过程"><a href="#升级过程" class="headerlink" title="升级过程"></a>升级过程</h1><p>PWA相关知识在此不再赘述，之前的文章也提到过一些。我们主要需要manifest.json和service-worker.js。由于项目[loveblock]静态资源过多（图片+css+js共50+个请求），因此在service-worker的中需要拦截这些资源请求。</p><p>插件的接入过程可参考插件的官方文档，写得很详细。在此仅叙述升级过程中遇到的问题:</p><h3 id="1-与七牛CDN结合使用"><a href="#1-与七牛CDN结合使用" class="headerlink" title="1.与七牛CDN结合使用"></a>1.与七牛CDN结合使用</h3><p>一开始我使用的是<a href="https://www.npmjs.com/package/offline-plugin" target="_blank" rel="noopener">offline-plugin插件</a>，简单好用，但是控制台一直会报错，排查后发现是因为插件默认把service-worker的注册逻辑打包到了js中并上传到CDN，导致service-worker无法通过外部脚本注册</p><h3 id="2-缓存html文件"><a href="#2-缓存html文件" class="headerlink" title="2.缓存html文件"></a>2.缓存html文件</h3><p>为解决上述问题，我换用了<a href="https://www.npmjs.com/package/sw-precache-webpack-plugin" target="_blank" rel="noopener">sw-precache-webpack-plugin插件</a>。这个插件就不存在上述问题，因为service-worker的注册是要我们手动完成的。因此，可以将以下代码添加进模板中（官方实例）:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(<span class="string">'serviceWorker'</span> <span class="keyword">in</span> navigator) &#123;</span><br><span class="line">    navigator.serviceWorker.register(<span class="string">'/service-worker.js'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p><p>打包后会发现新生成了service-worker.js，里面有我们想要缓存的资源。我们发现资源缓存数组中的第一个元素就是XXXX.html，即是我们的html文件。<br>（未完待续）</p>]]></content>
@@ -10,9 +26,9 @@
       
         <tags>
             
-            <tag> vue </tag>
-            
             <tag> PWA </tag>
+            
+            <tag> vue </tag>
             
         </tags>
       
@@ -122,9 +138,9 @@
       
         <tags>
             
-            <tag> node.js </tag>
-            
             <tag> 云服务器 </tag>
+            
+            <tag> node.js </tag>
             
         </tags>
       
@@ -138,9 +154,9 @@
       
         <tags>
             
-            <tag> node.js </tag>
-            
             <tag> 云服务器 </tag>
+            
+            <tag> node.js </tag>
             
         </tags>
       
